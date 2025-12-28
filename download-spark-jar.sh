@@ -1,5 +1,5 @@
-mkdir -p ~/spark/jars
-cd ~/spark/jars
+mkdir -p ./spark/jars
+cd ./spark/jars
 
 # AWS SDK
 wget https://repo1.maven.org/maven2/com/amazonaws/aws-java-sdk-bundle/1.12.734/aws-java-sdk-bundle-1.12.734.jar
