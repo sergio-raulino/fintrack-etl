@@ -9,6 +9,14 @@ secrets/**
 */secrets*
 **/secrets*
 
+# === Spark connections (não versionar) ===
+spark/scripts/connections/
+spark/scripts/connections/**
+
+# === Spark JARs (não versionar) ===
+spark/jars/
+spark/jars/**
+
 # === Logs (qualquer nível) ===
 airflow/**/logs/
 spark/**/logs/
@@ -24,10 +32,10 @@ __pycache__/
 venv/
 ENV/
 env/
-**/venv/           # <- ignora qualquer "venv" em subdiretórios
-**/.venv/          # <- ignora qualquer ".venv" em subdiretórios
+**/venv/
+**/.venv/
 
-# (opcional) IDE/editor
+# === IDE/Editor ===
 .vscode/
 .idea/
 
