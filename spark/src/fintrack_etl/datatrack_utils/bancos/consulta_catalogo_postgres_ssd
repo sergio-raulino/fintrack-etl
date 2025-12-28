@@ -1,0 +1,79 @@
+/* Levantar Dados Catálogo */
+WITH tabelas_properties AS (
+SELECT DISTINCT
+    'ssd' AS "sistema",
+    'postgres' AS "banco",
+    n.nspname AS "esquema",
+    c.relname AS "tabela",
+    'full' AS "tipo_carga",
+    '' AS "query",
+    '' AS "coluna_particao",
+    '' AS "tipo_coluna_particao",
+    COALESCE(
+        (
+            SELECT string_agg(a.attname, ',' ORDER BY a.attnum)
+            FROM pg_constraint conp
+            JOIN pg_attribute a
+              ON a.attrelid = conp.conrelid
+             AND a.attnum = ANY(conp.conkey)
+            WHERE conp.conrelid = c.oid
+              AND conp.contype = 'p'
+        ),
+        (
+            SELECT string_agg(a.attname, ',' ORDER BY a.attnum)
+            FROM pg_constraint conu
+            JOIN pg_attribute a
+              ON a.attrelid = conu.conrelid
+             AND a.attnum = ANY(conu.conkey)
+            WHERE conu.conrelid = c.oid
+              AND conu.contype = 'u'
+              AND conu.oid = (
+                  SELECT MIN(cu.oid)
+                  FROM pg_constraint cu
+                  WHERE cu.conrelid = c.oid
+                    AND cu.contype = 'u'
+              )
+        )
+    ) AS "chaves",
+    1 AS lowerbound,
+    c.reltuples::bigint AS upperbound,
+    --GREATEST(ROUND(c.reltuples::bigint / 1000000::numeric), 1) AS numpartitions,
+    -- Calcular o tamanho da tabela e divide cada particao gigas o tamanho de cada particao 
+    least(greatest(round(round((pg_total_relation_size(quote_ident(n.nspname) || '.' || quote_ident(c.relname)) / (1024.0 * 1024.0 * 1024.0)),3)),1),4) AS numpartitions,
+    'True' AS create_row_number,
+    '' AS condition,
+	(
+	    SELECT string_agg(DISTINCT format_type(a.atttypid, a.atttypmod), ',')
+	    FROM pg_attribute a
+	    JOIN pg_class c2 ON c2.oid = a.attrelid
+	    JOIN pg_namespace n2 ON n2.oid = c2.relnamespace
+	    WHERE n2.nspname = n.nspname
+	      AND c2.relname = c.relname
+	      AND format_type(a.atttypid, a.atttypmod) IN ('bytea')
+	      AND a.attnum > 0  
+	      AND NOT a.attisdropped
+	) AS "tipos_col_excluidos"
+FROM pg_catalog.pg_class c
+JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+WHERE n.nspname = 'ssd' -- Schema
+  AND c.relkind = 'r'  -- somente tabelas reais
+)
+select 
+ 	tp."sistema",
+ 	tp."banco",
+ 	tp."esquema",
+ 	tp."tabela",
+ 	tp."tipo_carga",
+ 	tp."query",
+ 	tp."coluna_particao",
+ 	tp."tipo_coluna_particao",
+ 	tp."chaves",
+ 	CASE WHEN tp."chaves" IS NOT NULL AND tp."numpartitions" > 1 THEN 'ROW_PARTITION' ELSE NULL END "nome_coluna_delta",
+ 	CASE WHEN tp."chaves" IS NOT NULL AND tp."numpartitions" > 1 THEN 'integer' ELSE NULL END  "type_delta",
+ 	tp."lowerbound",
+ 	tp."upperbound",
+ 	tp."numpartitions",
+    CASE WHEN tp."chaves" IS NOT NULL AND tp."numpartitions" > 1 THEN 'True' ELSE null END "create_row_number",
+    '' AS "condition",
+    "tipos_col_excluidos"
+from tabelas_properties tp;

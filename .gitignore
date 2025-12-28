@@ -1,0 +1,35 @@
+# === Env files (qualquer nível) ===
+.env*
+*/.env*
+**/.env*
+
+# === Secrets (não commitar nunca) ===
+secrets/
+secrets/**
+*/secrets*
+**/secrets*
+
+# === Logs (qualquer nível) ===
+airflow/**/logs/
+spark/**/logs/
+
+# === Python caches e bytecode ===
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# === Ambientes virtuais comuns ===
+.venv/
+venv/
+ENV/
+env/
+**/venv/           # <- ignora qualquer "venv" em subdiretórios
+**/.venv/          # <- ignora qualquer ".venv" em subdiretórios
+
+# (opcional) IDE/editor
+.vscode/
+.idea/
+
+edit_mode.sh
+run_mode.sh

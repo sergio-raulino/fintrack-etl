@@ -1,0 +1,144 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: airflow-postgres
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    ports:
+      - "5433:5432"
+    networks:
+      - airflow-network
+    volumes:
+      - pg_data_airflow:/var/lib/postgresql/data
+    restart: always
+    cpus: "0.8"
+    mem_limit: "1g"
+
+  airflow:
+    build:
+      context: ./airflow
+      dockerfile: Dockerfile    # <— usa este arquivo
+    container_name: airflow
+    env_file:
+      - .env          # ← raiz do repo (com as senhas)
+      - .env.etl      # ← configs de Airflow
+    depends_on:
+      - postgres
+    volumes:
+          - ./airflow/dags:/opt/airflow/dags
+          - ./airflow/config:/opt/airflow/config
+    entrypoint: ["/usr/local/bin/entrypoint-ext.sh"]               # << usa o nosso entrypoint
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - airflow-network
+    environment:
+      TZ: America/Fortaleza
+    cpus: "3.0"
+    mem_limit: "4g"
+
+  spark:
+    build:
+      context: ./spark/
+      dockerfile: Dockerfile
+    container_name: spark
+    environment:
+      - SPARK_MODE=master
+      - SPARK_LOCAL_IP=spark
+      - TZ=America/Fortaleza
+    ports:
+      - "7077:7077"
+      - "4040:4040"
+      - "18080:8080"   # UI Master
+      - "2222:22"
+    volumes:
+      - ./spark/scripts:/opt/spark-jobs
+      - ./spark/requirements-spark.txt:/requirements-spark.txt
+      - ./spark/conf/spark-defaults.conf:/opt/spark/conf/spark-defaults.conf
+      - ./spark/conf/spark-env.sh:/opt/spark/conf/spark-env.sh
+      - ./spark/conf/log4j2.properties:/opt/spark/conf/log4j2.properties
+      - spark_local:/tmp/spark-local
+      - ./spark/secrets:/run/secrets:rw
+      - ./spark/fintrack_etl.zip:/opt/spark-jobs/fintrack_etl.zip:ro
+    networks:
+      - airflow-network
+      - fintrack-net
+    extra_hosts:
+      - "localhost:127.0.0.1"
+      
+    restart: always
+    cpus: 2
+    mem_limit: "1g"
+    # ulimits:
+    #   nofile:
+    #     soft: 65536
+    #     hard: 65536
+
+  # =============== Spark Workers (4x) ===============
+  spark-worker-1: &spark_worker
+    build:
+      context: ./spark
+      dockerfile: Dockerfile
+    container_name: spark-worker-1
+    environment:
+      - SPARK_MODE=worker
+      - SPARK_MASTER_URL=spark://spark:7077
+      - SPARK_WORKER_MEMORY=2G         # exposto ao Spark
+      - SPARK_WORKER_CORES=2
+      - SPARK_WORKER_OPTS=-Dspark.shuffle.service.enabled=true -Dspark.worker.cleanup.enabled=true -Dspark.worker.cleanup.appDataTtl=86400
+      - TZ=America/Fortaleza
+    ports:
+      - "28081:8081"
+    depends_on: [spark]
+    restart: always
+    volumes:
+      - ./spark/scripts:/opt/spark-jobs
+      - ./spark/conf/spark-defaults.conf:/opt/spark/conf/spark-defaults.conf
+      - ./spark/conf/spark-env.sh:/opt/spark/conf/spark-env.sh
+      - ./spark/conf/log4j2.properties:/opt/spark/conf/log4j2.properties
+      - spark_local:/tmp/spark-local
+      - ./spark/secrets:/run/secrets:rw
+      - ./spark/fintrack_etl.zip:/opt/spark-jobs/fintrack_etl.zip:ro
+    extra_hosts:
+      - "localhost:127.0.0.1"
+    networks:
+      - airflow-network
+      - fintrack-net
+    cpus: "2.0"
+    mem_limit: "2g"
+    # ulimits:
+    #   nofile:
+    #     soft: 65536
+    #     hard: 65536
+
+  spark-worker-2:
+    <<: *spark_worker
+    container_name: spark-worker-2
+    ports: ["28082:8081"]
+
+  # spark-worker-3:
+  #   <<: *spark_worker
+  #   container_name: spark-worker-3
+  #   ports: ["28083:8081"]
+
+  # spark-worker-4:
+  #   <<: *spark_worker
+  #   container_name: spark-worker-4
+  #   ports: ["28084:8081"]
+
+  # spark-worker-5:
+  #   <<: *spark_worker
+  #   container_name: spark-worker-5
+  #   ports: ["28085:8081"]
+
+networks:
+  airflow-network:
+  fintrack-net:
+    external: true     # 👈 usa a rede criada lá no core
+
+volumes:
+  pg_data_airflow:
+  spark_local:

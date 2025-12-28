@@ -1,0 +1,22 @@
+# ==== IGNORE para build do Docker ====
+# venvs em qualquer lugar
+**/venv/
+**/.venv/
+**/ENV/
+**/env/
+
+# caches Python
+**/__pycache__/
+**/.pytest_cache/
+**/.mypy_cache/
+
+# notebooks/caches
+**/.ipynb_checkpoints/
+
+# arquivos locais e segredos
+**/.DS_Store
+**/.env
+**/.env.*
+
+# (opcional) ignore venv específico citado no erro
+scripts/**/venv/

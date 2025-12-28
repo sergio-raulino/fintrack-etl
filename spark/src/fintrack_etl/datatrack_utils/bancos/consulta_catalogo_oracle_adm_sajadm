@@ -1,0 +1,86 @@
+WITH tabelas_properties AS (
+SELECT
+    'adm' AS "sistema",
+    'oracle' AS "banco",
+    t.OWNER AS "esquema",
+    t.TABLE_NAME AS "tabela",
+    'full' AS "tipo_carga",
+    '' AS "query",
+    '' "coluna_particao",  
+    '' "tipo_coluna_particao",  
+    LISTAGG(cols.column_name, ',') WITHIN GROUP (ORDER BY cols.position) AS "chaves",
+    1 AS "lowerbound",
+    t.num_rows AS "upperbound",
+    -- Particao Multiplos de 600mb
+    max(greatest(round(tbd.tamanho_mb / 600),1)) AS "numpartitions",
+    /*    (SELECT LISTAGG(DISTINCT data_type,',') FROM ALL_TAB_COLUMNS ATC
+    	WHERE ATC.OWNER = T.OWNER
+    	AND ATC.TABLE_NAME = T.TABLE_NAME
+    	AND data_type IN ('LONG RAW','BLOB','NCLOB','BFILE')
+    ) "tipos_col_excluidos"*/
+    null "tipos_col_excluidos"       
+FROM
+    all_tables t
+    LEFT JOIN ALL_OBJECTS OBJ ON OBJ.OWNER = T.OWNER
+    					 AND OBJ.OBJECT_NAME = T.TABLE_NAME
+LEFT JOIN (
+    -- pega a PK ou a primeira UNIQUE KEY
+    SELECT
+        ac.owner,
+        ac.table_name,
+        ac.constraint_name,
+        ac.constraint_type
+    FROM (
+        SELECT
+            ac.*,
+            ROW_NUMBER() OVER (PARTITION BY ac.owner, ac.table_name 
+                               ORDER BY CASE WHEN ac.constraint_type = 'P' THEN 1 ELSE 2 END, ac.constraint_name) AS rn
+        FROM
+            all_constraints ac
+        WHERE
+            ac.constraint_type IN ('P','U')
+    ) ac
+    WHERE rn = 1
+) ac ON t.owner = ac.owner AND t.table_name = ac.table_name
+LEFT JOIN all_cons_columns cols 
+       ON ac.owner = cols.owner
+      AND ac.constraint_name = cols.constraint_name
+      AND ac.table_name = cols.table_name
+LEFT JOIN all_tab_columns atc 
+       ON atc.table_name = cols.table_name
+      AND atc.column_name = cols.column_name
+      AND atc.owner = cols.owner
+LEFT JOIN VW_TAMANHO_TABELAS_BD TBD ON TBD.owner = t.owner
+								AND tbd.table_name = t.table_name
+WHERE t.owner IN ('SAJADM')
+  --AND NOT REGEXP_LIKE(t.table_name, '^(BKP|BKKP|ETMP|XX|X|TMP|ANTONIO_CLEMENTINO|BPKR)')
+  AND OBJ.OBJECT_TYPE NOT IN ('INDEX')
+  --AND T.NUM_ROWS IS NOT NULL
+  AND T.table_name IN ('ECDTENTRANCIA','ECPAORGAOSETOR')
+  AND T.NUM_ROWS > 0
+GROUP BY 
+    t.owner,
+    t.table_name,
+    t.num_rows
+ORDER BY 
+    t.owner, t.table_name
+   )
+ SELECT 
+ 	tp."sistema",
+ 	tp."banco",
+ 	tp."esquema",
+ 	tp."tabela",
+ 	tp."tipo_carga",
+ 	tp."query",
+ 	tp."coluna_particao",
+ 	tp."tipo_coluna_particao",
+ 	tp."chaves",
+ 	CASE WHEN tp."chaves" IS NOT NULL AND tp."numpartitions" > 1 THEN 'ROW_PARTITION' ELSE NULL END "nome_coluna_delta",
+ 	CASE WHEN tp."chaves" IS NOT NULL AND tp."numpartitions" > 1 THEN 'integer' ELSE NULL END  "type_delta",
+ 	tp."lowerbound",
+ 	tp."upperbound",
+ 	tp."numpartitions",
+    CASE WHEN tp."chaves" IS NOT NULL AND tp."numpartitions" > 1 THEN 'True' ELSE null END "create_row_number",
+    '' AS "condition",
+    "tipos_col_excluidos"
+ FROM tabelas_properties tp;
