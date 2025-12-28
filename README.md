@@ -1,7 +1,5 @@
 # Airflow BI
 
-
-
 ## Getting started
 
 To make it easy for you to get started with GitLab, here's a list of recommended next steps.
@@ -136,18 +134,3 @@ For open source projects, say how it is licensed.
 
 ## Project status
 If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
-
-Bom dia a todos !
-
-Caros, atualizando o cenário atual e explicitando um histórico dessa frente de obtenção do token de acesso aos dados do TJCE no serviço de produção do BNMP: https://api.bnmp.cnj.jus.br/bnmpservice/api.
-
-20/08 - Ricardo Gleidson (TJCE) sinaliza que os devidos testes de validação foram realizados e solicita o token de produção;
-02/09 - Michelle (TJCE) reforça o pedido de envio do token de acesso.
-05/09 - Sidney (CNJ) envia um token de produção para validação. 
-05/09 - Sergio Raulino (TJCE) sinaliza que o token estava inválido com mensagem de "Acesso Negado".
-08/09 - Sidney (CNJ) envia um segundo token de produção para re-validação.
-09/09 - Sergio Raulino (TJCE) retorna com o mesmo resultado para o novo token: "Acesso Negado".
-
-Como hoje, em 11/09, ainda estamos sem os acessos disponibilizados, e essa frente está relacionada a frentes estratégicas no TJCE, solicitamos uma ação visando resolutividade geral do caso.
-
-Estou totalmente a disposição para uma call ou outra ação acordada.
