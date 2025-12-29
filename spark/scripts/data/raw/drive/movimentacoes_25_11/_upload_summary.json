@@ -4,23 +4,20 @@
     "file_name": "extrato_BB.pdf",
     "drive_modifiedTime": "2025-12-08T13:57:06.600Z",
     "drive_size": "593725",
-    "status": "uploaded",
-    "s3a_uri": "s3a://sdl-lnd-fin/fintrack/movimentacoes_25_11/extrato_BB.pdf"
+    "status": "skip"
   },
   {
     "file_id": "1L-DVH0APeyfcNqxDA1thhlhoyI04VT15",
     "file_name": "fatura_BB.pdf",
     "drive_modifiedTime": "2025-12-08T13:53:22.402Z",
     "drive_size": "282496",
-    "status": "uploaded",
-    "s3a_uri": "s3a://sdl-lnd-fin/fintrack/movimentacoes_25_11/fatura_BB.pdf"
+    "status": "skip"
   },
   {
     "file_id": "10pAKYzHN-5omifcnzd4xd45YKh6oCM7_",
     "file_name": "fatura_bradesco.pdf",
     "drive_modifiedTime": "2025-12-08T13:53:33.029Z",
     "drive_size": "230123",
-    "status": "uploaded",
-    "s3a_uri": "s3a://sdl-lnd-fin/fintrack/movimentacoes_25_11/fatura_bradesco.pdf"
+    "status": "skip"
   }
 ]
