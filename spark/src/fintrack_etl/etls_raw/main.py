@@ -125,8 +125,10 @@ def make_spark(app_name: str | None = None) -> SparkSession:
 class LandingObject:
     bucket: str
     key: str
-    name: str         # basename
+    name: str         # basename do arquivo
     kind: str         # fatura_bb | extrato_bb | fatura_bradesco | desconhecido
+    bank_code: str    # bb, bradesco, etc.
+    doc_type: str     # extratos, faturas
 
 
 def slugify(name: str) -> str:
@@ -148,44 +150,102 @@ def classify_pdf(filename: str) -> str:
     return "desconhecido"
 
 
-def list_bank_pdfs_from_landing(prefix_suffix: str = "fintrack/movimentacoes_25_11/") -> List[LandingObject]:
+def list_bank_pdfs_from_landing(
+    client_slug: str = "cruz_raulino_familia",
+    bank_code: str | None = None,
+    doc_type: str | None = None,
+    year: int | None = None,
+    month: int | None = None,
+) -> List[LandingObject]:
     """
-    Lista os PDFs de faturas/extratos bancários na landing do FinTrack.
+    Lista os PDFs de faturas/extratos bancários na landing do FinTrack,
+    considerando a estrutura:
 
-    prefix_suffix: sufixo relativo dentro do bucket landing,
-                   ex.: "fintrack/movimentacoes_25_11/"
+      fintrack/01_clientes/{client_slug}/01_bancos/{bank_code}/{doc_type}/{year}/{month}/arquivo.pdf
     """
     client = get_minio_client()
 
     lnd_bucket_uri = settings.hive_fin.sdl_lnd_bucket  # ex.: s3a://sdl-lnd-fin
     bucket, base_prefix = _parse_s3a_uri(lnd_bucket_uri)
 
-    # Prefixo completo dentro do bucket
-    if base_prefix:
-        full_prefix = f"{base_prefix.rstrip('/')}/{prefix_suffix.lstrip('/')}"
-    else:
-        full_prefix = prefix_suffix.lstrip("/")
+    parts = ["fintrack", "01_clientes", client_slug, "01_bancos"]
 
-    logger.info("Listando objetos de landing: bucket=%s prefix=%s", bucket, full_prefix)
+    if bank_code:
+        parts.append(bank_code)
+
+    if doc_type:
+        parts.append(doc_type)
+
+    if year is not None:
+        parts.append(f"{year:04d}")
+
+    if month is not None:
+        parts.append(f"{month:02d}")
+
+    relative_prefix = "/".join(parts) + "/"
+
+    if base_prefix:
+        full_prefix = f"{base_prefix.rstrip('/')}/{relative_prefix}"
+    else:
+        full_prefix = relative_prefix
+
+    logger.info(
+        "Listando objetos de landing: bucket=%s prefix=%s (client=%s, bank=%s, doc_type=%s, year=%s, month=%s)",
+        bucket,
+        full_prefix,
+        client_slug,
+        bank_code,
+        doc_type,
+        year,
+        month,
+    )
 
     objs: List[LandingObject] = []
     for obj in client.list_objects(bucket, prefix=full_prefix, recursive=True):
         if not obj.object_name.lower().endswith(".pdf"):
             continue
+
         name = os.path.basename(obj.object_name)
-        kind = classify_pdf(name)
+
+        # path: fintrack/01_clientes/<client>/01_bancos/<bank>/<doc_type>/<year>/<month>/<file>
+        path_parts = obj.object_name.split("/")
+
+        try:
+            idx = path_parts.index("01_bancos")
+            bank = path_parts[idx + 1]
+            doc = path_parts[idx + 2]
+        except (ValueError, IndexError):
+            logger.warning("Path inesperado na landing: %s", obj.object_name)
+            bank = "desconhecido"
+            doc = "desconhecido"
+
+        # kind baseado em pasta (muito mais robusto que olhar só o nome do arquivo)
+        if bank == "bb" and doc == "faturas":
+            kind = "fatura_bb"
+        elif bank == "bb" and doc == "extratos":
+            kind = "extrato_bb"
+        elif bank == "bradesco" and doc == "faturas":
+            kind = "fatura_bradesco"
+        # se quiser tratar extrato Bradesco também, defina um tipo:
+        elif bank == "bradesco" and doc == "extratos":
+            # por enquanto pode ir como "extrato_bradesco" se você vier a criar o extractor
+            kind = "extrato_bradesco"
+        else:
+            kind = "desconhecido"
+
         objs.append(
             LandingObject(
                 bucket=bucket,
                 key=obj.object_name,
                 name=name,
                 kind=kind,
+                bank_code=bank,
+                doc_type=doc,
             )
         )
 
     logger.info("Total de PDFs encontrados na landing: %d", len(objs))
     return objs
-
 
 # =========================================================
 # Parsing de PDFs (BB, Bradesco)
@@ -291,17 +351,39 @@ def upsert_iceberg_table_partitioned(df: DataFrame, table_id: str) -> None:
 
 def bank_lnd_to_raw(
     spark: SparkSession,
-    landing_prefix_suffix: str = "fintrack/movimentacoes_25_11/",
+    client_slug: str = "cruz_raulino_familia",
+    bank_code: str | None = None,
+    doc_type: str | None = None,
+    year: int | None = None,
+    month: int | None = None,
 ) -> None:
     """
-    Lê os PDFs na landing (MinIO) e grava dataframes de lançamentos
-    em tabelas Iceberg na camada RAW, particionadas por
-    ingestao_year/ingestao_month/ingestao_day.
+    Lê os PDFs na landing (MinIO) em:
+
+      fintrack/01_clientes/{client_slug}/01_bancos/{bank_code}/{doc_type}/{year}/{month}/...
+
+    e grava dataframes de lançamentos em tabelas Iceberg na camada RAW,
+    particionadas por ingestao_year/ingestao_month/ingestao_day.
     """
-    logger.info("Iniciando LND -> RAW (Iceberg) para PDFs bancários.")
+    logger.info(
+        "Iniciando LND -> RAW (Iceberg) para PDFs bancários | client=%s bank=%s doc_type=%s year=%s month=%s",
+        client_slug,
+        bank_code,
+        doc_type,
+        year,
+        month,
+    )
+
     client = get_minio_client()
 
-    objs = list_bank_pdfs_from_landing(prefix_suffix=landing_prefix_suffix)
+    objs = list_bank_pdfs_from_landing(
+        client_slug=client_slug,
+        bank_code=bank_code,
+        doc_type=doc_type,
+        year=year,
+        month=month,
+    )
+
     if not objs:
         logger.warning("Nenhum PDF de fatura/extrato encontrado na landing. Nada a fazer.")
         return
@@ -322,7 +404,6 @@ def bank_lnd_to_raw(
             logger.warning("Nenhum DataFrame gerado para %s (%s). Pulando RAW.", obj.name, obj.kind)
             continue
 
-        # No momento só usamos "lancamentos", mas deixo iterável
         for _, df_pd in dfs.items():
             if df_pd is None or df_pd.empty:
                 logger.warning("DataFrame vazio para %s. Pulando.", obj.name)
@@ -341,3 +422,4 @@ def bank_lnd_to_raw(
             upsert_iceberg_table_partitioned(df_spark, table_id)
 
     logger.info("✅ LND -> RAW (bank PDFs, Iceberg) concluído com sucesso.")
+

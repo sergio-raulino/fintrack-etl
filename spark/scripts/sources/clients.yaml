@@ -1,0 +1,31 @@
+clients:
+  - slug: "cruz_raulino_familia"
+    display_name: "Família Cruz Raulino"
+    banks:
+      - code: "bb"
+        name: "Banco do Brasil"
+        doc_types: ["extratos", "faturas"]
+      - code: "bradesco"
+        name: "Bradesco"
+        doc_types: ["extratos", "faturas"] 
+  - slug: "fiusa_maia_familia"
+    display_name: "Família Fiúsa Maia"
+    banks:
+      - code: "bb"
+        name: "Banco do Brasil"
+        doc_types: ["extratos"]
+      - code: "bradesco"
+        name: "Bradesco"
+        doc_types: ["extratos", "faturas"]  
+      - code: "cef"
+        name: "Caixa Economica Federal"
+        doc_types: ["extratos"]
+  - slug: "empresa_padaria_x"
+    display_name: "Padaria X Ltda."
+    banks:
+      - code: "bb"
+        name: "Banco do Brasil"
+        doc_types: ["extratos", "faturas"]
+      - code: "bradesco"
+        name: "Bradesco"
+        doc_types: ["extratos", "faturas"]

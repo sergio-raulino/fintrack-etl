@@ -1,0 +1,619 @@
+{
+  "cruz_raulino_familia": {
+    "client_folder_id": "1SF1HuUFcX1-Xs4C7D_hvhC3ACkorwMpn",
+    "bancos_root_id": "19v_3bhC6ARfLVRJ0V-9MtQaV08K99SxI",
+    "banks": {
+      "bb": {
+        "bank_folder_id": "1CuKn-93HnpvF9hTD_zVYXt8MWN7wDfIK",
+        "doc_types": {
+          "extratos": {
+            "root_folder_id": "1Btr93Xuzn71JvBL68R7qN0lltnwPXxFl",
+            "years": {
+              "2025": {
+                "01": "1Oitt52fEXYsSfnx5OjRll0Tj5vyNxOWS",
+                "02": "1xY3tpe4w2c6Dw5YuFPb7vfS6quAhWkjh",
+                "03": "1af_UpK0SE9Fj9jumCM9WzVRHAOwStzGg",
+                "04": "15AlQbSyPk4GvXpFx0Gp-uUx6vAl8kVfV",
+                "05": "1Ff3YAkIqpBVPL_x757yTJmAlaSt16LSd",
+                "06": "1VRqWRp0AkCbvZgxU_E8V9zGS-Qp38xIz",
+                "07": "1aE7biCpevib7Kc9ynl4WZweUoqBFXkBg",
+                "08": "1u-hQm88R1yePbZ0tke3BH2G5WRDObmud",
+                "09": "1eGFXAQiKX7Bx3Pe6fwD2wuQZDRAZs1fA",
+                "10": "1igRkXSZq_c-_J9IL_xspJPhS3ZTWLoIO",
+                "11": "1yJMr6-mBi0CeF6lLV8IRmSm4P2jgNCT7",
+                "12": "1sm_z0z8nKNhMcCuTFN09ffd9NgbO2JIP"
+              },
+              "2026": {
+                "01": "1lqwBbn0aF8CBkynphtElVpkn5_ggBqJc",
+                "02": "1VdfzGYDndSxY6t-z60m-yG6r5oyo8KLN",
+                "03": "1Uh1Qku6tGdPoMUi9LqAd6_TSeOYYcEAh",
+                "04": "1a2Xy_hqejGLU47ZeqFQkksEJgiY3ruKz",
+                "05": "1x8nglvfAcK-_0b6FPxv3vpTcmaDFI10f",
+                "06": "1I5tXL9Vq5HNF7Yt54OKAkNZ5wgXUiyki",
+                "07": "1SPmoLGChbJZ6bWCWC82Ibx4W7uVV5IJD",
+                "08": "1-LlAZ9-RNJzcu4b9O5BwZLLRd54b1jSu",
+                "09": "1POtmg0sClOz0m6qNIZ3l1K_KIBfuapye",
+                "10": "1GmvTL4U8nqSmw9AZlqGlDB8KRuFP94Z2",
+                "11": "1ctY7UZcjOwl6Nuy3bB7p0wE3R-nk787W",
+                "12": "1xhA53rK0Rlz2DoEPF5w_nhWE5lvDaElm"
+              },
+              "2027": {
+                "01": "1CfMg2vRj_3vZVO_BCFfn-t-2dMp-OMUU",
+                "02": "1KfMLjAR5z_knXS4BEU_e5a3DrYSr8WVJ",
+                "03": "1Bt0wj9GwqRc8sslrEuOO3AlW6vzK5hOm",
+                "04": "162dy2QZk7LM5fJVFwaZv8MpWTzrojo89",
+                "05": "1kmdG7-9eril05X6_vlWRwKaQvz-NMR7h",
+                "06": "1o_c1vXqSRqzO2fs4S1W3gUZtUbU2et0h",
+                "07": "1QuZaiiHT17HwYkVk-PgzN-U6eBvnKabo",
+                "08": "1P7aABRVPsH8gEozVW9lLkgw-auYBC7M_",
+                "09": "1rhO0DNt48VBiCdKCO8p_DCpWeLqa-8Gz",
+                "10": "1EV5lmMRFgT82b3h72QP6GJ2XHs5JC3hc",
+                "11": "163nXlH2RjQAiAkvzPlHMvmLoyG7xJqHA",
+                "12": "1X65QeuZpn86Md_DyG1WKc76zYdDVWePC"
+              }
+            }
+          },
+          "faturas": {
+            "root_folder_id": "1Ua3qvSzcwzS9l7Xa6i0BXv-NdnH_nt25",
+            "years": {
+              "2025": {
+                "01": "1ReuncAb8PaYGHzMWQ44BGc6Hci_2qXdr",
+                "02": "1cUZLHhPJIQy156pg40vyafVNoF7OhTsS",
+                "03": "1DysXez9hr3IDYkC-TqCNbrYn8cPh2w4g",
+                "04": "1J3lMn85x9FYkwErdLqEKLCTxu7iY2h9Z",
+                "05": "1F73sDG1_nB1MkwVn9UeExCO4sRLfD7zH",
+                "06": "1qLSZUw05q-TTx785x_n3t1-MNtMaeFaG",
+                "07": "19BWODny1AyBSgSpYrlCBLmtphKUTND-g",
+                "08": "14T-bB6ns5D6Ght4sPBmL2niucXOB42zL",
+                "09": "1YzJMjqsv3UbBRLV6Pbj1zbAq8_rQzncm",
+                "10": "1P70DkO0D7v-S9mMt4HncpLedgU9QF-iC",
+                "11": "14n9yluLvnuXJPmf1v6rF0ZoMtRwMdlrF",
+                "12": "1v_2LhSbWS0BitrpkLIpfqnVRLQBMkzS8"
+              },
+              "2026": {
+                "01": "1pbcH98_dYC51VgwuRBU2QxqgVfQVJ29-",
+                "02": "17OsjYzyV9JcSErEZQS4Aad5zPXKUdcxV",
+                "03": "1I_fjBSZW78s3LurBwQQxFEFL6Vb_FseY",
+                "04": "1BdsFXbKFrH7lHqrQkypIdIu53cJA-daj",
+                "05": "1OECGyI6I20iaa8t_3nwdxeqHHSoJGIza",
+                "06": "1uemh1FRSKlWeOoCDiUQ-nfiyT-_rx3ip",
+                "07": "1g-FVtzQoWAlByyoKHq4dbRceqLgFFfcL",
+                "08": "1ztmZ4wph6_2XUl6YjU1CwnJ1aN1fshp0",
+                "09": "1oxUohWxjpSeKTQIlKIUs0-pcOSWY9SdP",
+                "10": "1EnYuWTq-4wesNLO4tFeO2tm4o0YtmUzr",
+                "11": "1Z681dbXjkvIigzhO_wMLXZyADcgM9-tk",
+                "12": "1jVjBe8soOhyNrmLy68mmYG5TfyNBIvvv"
+              },
+              "2027": {
+                "01": "1nVtbPYvWskDl0aP2GK0ATLGuDkd8k1UA",
+                "02": "1YisOWNi26JGt0z9L46OwGCVQyDmvvxs1",
+                "03": "13tE79M3KIU4lF5asUrTIV2s4wPDBmLAj",
+                "04": "1ThLour7jXN_8CLS8nA6h_GtP46GU4Bz7",
+                "05": "1WGUemT7iHacoXeEQEl6anx605H-7Lq2N",
+                "06": "1H_aFUHHGXVwEPKyM_W92BybV9FdmdG4v",
+                "07": "16DLGiALs05iJmpxLmPhnvZ3RCfySsLFG",
+                "08": "1MmC8af7-UogOJ5s6EW6F98ye3JAa08Tz",
+                "09": "1LCd7ReawqhZRGRncHvk0UQNQ9pZnWyN6",
+                "10": "10WuG_59cfarqNjIPOdRbpSxREv6SkVkl",
+                "11": "1V5rMOUCtbZMWFfsecJBzVTbJHDMSM4Y2",
+                "12": "1j3ZTgyV7Oki_SoeOPBIHEebS4H1iX9DI"
+              }
+            }
+          }
+        }
+      },
+      "bradesco": {
+        "bank_folder_id": "1X8hivNgg_UtLGsLWxEi0GhCDdacxA7lw",
+        "doc_types": {
+          "extratos": {
+            "root_folder_id": "1e6zIkFY9cFASjx1sDW_u6QLT3DTue4IE",
+            "years": {
+              "2025": {
+                "01": "1ZX2qROyEjXRF5JxoEaewkmUOifrd7Cfq",
+                "02": "1gjysXlwzQ1FVCAhbnPzYzjA8O-UqLy-a",
+                "03": "1yEX7OAB-qqLhpjcuEwIEVdDOvmkaAfVb",
+                "04": "1pqYtn7Xu1FHgDYWzlVUyn0d-N5crikoF",
+                "05": "1yPY5HK-MXv6Bxsx4mCTIIU4VfJtmHCMD",
+                "06": "1T19yYVU7oSEOAbAS5p01RO09jPU7qQRY",
+                "07": "1DjUxyim6BwTvA4JL8QVVAV4XmpYhIIGy",
+                "08": "1q_QZMjjVr-C6MagBqTfEBwvZaZ_oqpUD",
+                "09": "1dfyYl3Rf2y3HM2QrnjW0g2QwGqp85jBS",
+                "10": "1gAazCdyiOQQFOuqXDgGekHxukLCvHIS3",
+                "11": "1bHBNApTlNT3vD7Y6oW7lQZDvoIhFpNem",
+                "12": "1AiRoocvIIOJwi5c2ZQ8eTc0juikKKJDs"
+              },
+              "2026": {
+                "01": "1d7_TWT5qSDBY29ev9o23tzL4wOcGHBCI",
+                "02": "1bT34rHthZynPJ4iUCUvbW9evx828Um_W",
+                "03": "1jVzQ7ohWNgHEUo8uVeKv5f5Ob2dYOlUo",
+                "04": "1djYmCPSBHbT3Ye031v_cMVBulnR31_EC",
+                "05": "1c26v0DZnOmt-Pr5JFxbOSvtjE8RBgZk1",
+                "06": "1os0OCCL_QVdO4DAED6JhKEmYKNdWzeB4",
+                "07": "1X1Y7CIPT7jjhp0RIEp-2Y306Gg4v3hCk",
+                "08": "1zMdDJALgtijPxJa2gssvNSaPZGi6OHd8",
+                "09": "1Y6iDmKY2CJ8FaXZK_FCeLDbJ1ok-P2Ru",
+                "10": "1R6GYpnvo4GEXSw-QqzNocQwTtVifamr_",
+                "11": "1TBBWU_I0V0TZZA76a6KVyQYQfbmafDc-",
+                "12": "1qzv6rcDAtzQbu8KII-7eXoLJ5zqrQsbu"
+              },
+              "2027": {
+                "01": "1j38sn9iTXLpILdDemZmJQKu5yfzGuQ2M",
+                "02": "1GXMh0lgEcAtyn3qSnG6KoVxTELllhZ8J",
+                "03": "14w5OmbpsHqKe9IXL1_Y718G5s0OHY4Bj",
+                "04": "1bcd--0n80ZiA3GsHc6PmTqzyEJKL_3_3",
+                "05": "1lMh6vXHederGv0eW4K0Squaaja-vrrJA",
+                "06": "1KVgVeGXLhA7eE2x3oGKLJtovIpruTF4X",
+                "07": "1Z2FIlkxIgK1zRrHAJzoRv_urdKxlx75N",
+                "08": "1QLnpCsxwOOS13tsoMBON0w0PivHFAZCT",
+                "09": "1e_bgncZ2bWLEcmrEyka1EEzaU2_2pljL",
+                "10": "10QuO7DQ6OoURiGe0Zp1YATTWVrkHHDtV",
+                "11": "1KpN4elLqF-YCH24t5D01o-zbPMexUOEJ",
+                "12": "1gwpROuCY2BfDXXHChlrN1RPzJb7mYSDv"
+              }
+            }
+          },
+          "faturas": {
+            "root_folder_id": "1L_rIMbzVOGAHsw5gVrO6KDqWhlEtoU2A",
+            "years": {
+              "2025": {
+                "01": "1wKc4-Nfu-5I2_wYbqS6gnfd6foUhKseU",
+                "02": "1b1K64SR6ekpB6yo3mRcuppyiHXZBtXWh",
+                "03": "1BgfxCal5dLMRDcnjS7nRNgtuY3RwrvSe",
+                "04": "1kT9bKppTMz7sft7Gk9Hk1xN_71aYzfXe",
+                "05": "1WD-Wf-RDgzE1B_UijA49vsSno_LVFGRt",
+                "06": "1gsXFGvo_pSJquHnZFNb0PtAaribKO2Yi",
+                "07": "1vqzxFvHuQw4fkd1a3rufvPfcxNLMPq0r",
+                "08": "1auUPsMuyE0COZtSocVRdWcax0XvecUov",
+                "09": "1-TeqL2GlJIollcBq_vaaBoFh0ZYoqAwL",
+                "10": "1eU3kL09mL1Md7Q6zjSHJFchtMYEpG5ii",
+                "11": "1NCN4WtZRC6-Z9YctjBKFdwc0nnQ6Inmo",
+                "12": "1cUVz2N2AsRe3q5gTBa4LJLsjke6XDPNh"
+              },
+              "2026": {
+                "01": "1WWV4zjYGCKy1yaZXMMhkQpUWv8x7AUfq",
+                "02": "1-mJCAvV74C4hNvL13wFHam54T4B3yM75",
+                "03": "1RiEsHSkX__7avT9U-8nsDyeGL-VDgN3n",
+                "04": "1szcw98By9oSCHbHQzi617e_EfPhj3gjZ",
+                "05": "1JhO6JDORziuY1czPb6cczXyCqgyWFs34",
+                "06": "1otwh6MEag6p-zSgSGSkyKoX5__gkvDJ-",
+                "07": "1o5JVGB2WQ19bDtQUyLWOIQwrEk-crAAf",
+                "08": "1ZEN9I5SkzX1Bpa0IzGYxkk2yXzuV0Qvz",
+                "09": "1qMJlc9FmtC7lHdFKoRMEYhX4uJq-DWzc",
+                "10": "1rpUU5M-ngijsvRo59d01IG3-AetBwKpU",
+                "11": "1yKF9Tm6FHtXzasSXNSTkiQt32mM5Ybq-",
+                "12": "1JN3m5lfxEUTRJKjsCb3tRDRck15mUHgS"
+              },
+              "2027": {
+                "01": "1_xhk3ZAV5rsrXwTECE4I-kNC0oXoarxr",
+                "02": "19Fgn8xHN25U-crGFpiQWBakuGMgxjiNA",
+                "03": "1aJG8f0IK3Ae3EtclI5E1koaf_BRPT29N",
+                "04": "1raGWclOcT-hers04AxKT8s62cM2hH62v",
+                "05": "1oTufUnWZrllebtoVnZr6_LdDz2wWlwzs",
+                "06": "1Tsmrk9l07MA0YsmX1_dyS7biUobpe_3y",
+                "07": "1WX0tc1h8YXsxW2dT1XF5td4Tfp-S62er",
+                "08": "1FCaODO5wcGlrl1LXWMq3Og-0DTivl8qc",
+                "09": "1GUdJJGTsfynNwB8NiEBwi85_05U6zLNl",
+                "10": "1T7Wm5eyew64PXZnciMHohfiqrl1uOofE",
+                "11": "1m2nyQFOZStkHEmD7qu0pvQ_DFwYsKKjU",
+                "12": "1oaDL-wCkLEgkRDT7VjcqPo9nOHpbIuWD"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "fiusa_maia_familia": {
+    "client_folder_id": "1LxeuapIFZjeeMLXfmFPUPY87YHXkePzr",
+    "bancos_root_id": "1LFTkkDj8su1g_RxqCmTWiV3UDZVmtCoz",
+    "banks": {
+      "bb": {
+        "bank_folder_id": "1YgDFXxQmwtI_LYZpMWWxNvtHN_ABrMLd",
+        "doc_types": {
+          "extratos": {
+            "root_folder_id": "1XsR6ws87BO3zUgPFHOwfECOP2_6M8F70",
+            "years": {
+              "2025": {
+                "01": "1skDb-D6mCthQ-2QAhHEb0Uol9H9BZm6j",
+                "02": "1lgcJDwpJQ6NqsZL8BDMB5rp-z92Rjk6V",
+                "03": "1erhLlQQUS4nOVhMqUD8NHHH8c7AEQPuF",
+                "04": "1BiHvcWBM_BuZPkI2CdHwK2T-Av4CkKIu",
+                "05": "1D9Ki4Dj51Xg9hTvPRJmafiP84fcICe3t",
+                "06": "18wcdKz2oPPja-Cw3hEmrv2Wnals4nAkW",
+                "07": "14eQnQ2xiTxrEeTgj987Kf7VCk_b3pgwu",
+                "08": "1q_dv0v82JiupQV4PI09IFEWF9x4GN8Vs",
+                "09": "1608wYYwGB2dZmNGmkytUjQEnnqcWaNYh",
+                "10": "1-DY3UQfOLrB71qt61q0cEhMk_wJSV4MH",
+                "11": "1x7p8wNVxtTYhnfpsDMDqYXK4gWfb67qN",
+                "12": "1IBn_ejNl-1HFxy001KgsaTOOcCFyG-2v"
+              },
+              "2026": {
+                "01": "1yjYsU8w4ENjvbBmXXKYE1yCLDrvFSQHK",
+                "02": "1UGcsxR97LiZWB2sl4SG2_A9kSYLgo_XF",
+                "03": "1fURXYHp4U3qErAG9_OHacMEC89l6hLrj",
+                "04": "14mBRBir7dJGtC_Vv7PD7kexvwuAyDNxR",
+                "05": "1huj_YibAPVltEkhkAGtphW2jDeu8HMuR",
+                "06": "1O86rO-Lt97HiYnmMP8qlgTWQFprF_HwU",
+                "07": "11MeBFHtRycjvBB5xT7FHiXi9IYQNm5M1",
+                "08": "1aYMD2YUYN3L5F04HxPNEUYwO-2wVpSLb",
+                "09": "1gzWtPrsxsiBJzOtdxx9NWcAVg9i1nwNy",
+                "10": "1EEAMiKJTGB02bNOdNXMsIOANoklLo7_u",
+                "11": "1UC78iYmHPneocioEE-SHfkhYoNAO2rEP",
+                "12": "13_YoyvpxDmPJm9dy3Y5_hvP34L2xDd9y"
+              },
+              "2027": {
+                "01": "1e91dwV72L8hNtxYgGZF3POb3QjSxqvRf",
+                "02": "1s6UtZE5RE3XnSCvBI8nD5PHAvNWXfM-Z",
+                "03": "1b4_1FTV8aoDiCrqvfX1lQF9yB22RIxbi",
+                "04": "1KoJoReiCoYQGayK5tOOiB5RpQvT8x2ZF",
+                "05": "1Gb2Ydmmh3UGobJHx3LNAhxl9xdvMOo2Y",
+                "06": "1PAnS5nssc3uCLzDmzuG5G5RkvAB_DYZ3",
+                "07": "1SvZpJcikCT7BdnJrt-NCxR9j3S3Du4g0",
+                "08": "1cnzefQhl6r0zuaWvuwO8i1zpmzG8QoOD",
+                "09": "1Jn37ZZp3S8nADLM93ZC5Ar8WI7wTKNtq",
+                "10": "1VdzDos4kvjs0sczB9iihJvb-KctEEdTW",
+                "11": "1GYH9JHI72D6WDAV5BgH0ioXIdN99Pmpk",
+                "12": "1dYFefV1HREz-zPiLyIAhWoKp5195EaX1"
+              }
+            }
+          }
+        }
+      },
+      "bradesco": {
+        "bank_folder_id": "1IIzKUiu4LdJqQKFka148ZQo3i1cuc1ZA",
+        "doc_types": {
+          "extratos": {
+            "root_folder_id": "1gTfwT6sDNp2UiloGHY09FkBi5SkUW0lO",
+            "years": {
+              "2025": {
+                "01": "1hI25ONu9LOO6-ZqIv-B9xW10Y05fe6_r",
+                "02": "1pPv-buM8zJ4Rx3SC10AniMxi4cfB8IpB",
+                "03": "1qeTnlMwoVkxhqkxf4ly7fm6Sfgx-C2mz",
+                "04": "1vfTKEjB1lIxR8IoSTxLkJ2OrsJHyBeZK",
+                "05": "1_WYOpeFk0SDvneVLmxktx1kO-ItYjIdW",
+                "06": "1-Jfua-9Ndc_n_26N6B0BnCcQ38vs6KXF",
+                "07": "1gRlQijIAbxVP-x7DRvNBGqjbz6xE7r65",
+                "08": "1o5mCpmQk1aFbIWGvcYCYLKXZs5HuWvvQ",
+                "09": "1PyZ7OgDEtDi3yJ8R-4kYeegJFEnvsyYp",
+                "10": "1V_YMWGSJTGQPN7EZqBWuRtoIvjUr1dLi",
+                "11": "1KsGhbMmyh_VdYuXYsU8g2KHRvzXVbnwc",
+                "12": "1BSdBxS-Q4-ofsq-6gqXCDDFOYxxniCBP"
+              },
+              "2026": {
+                "01": "1jyOEt23qyGE233zD-5Y56qkTcv8DLp2g",
+                "02": "1kJUrC-EkFdAlIZTdbm2PBiaFhFXK9x_0",
+                "03": "1_o1SmjPqsm5hhQskiIOvcvTOJ1oSb0Pf",
+                "04": "12oCBn3e5QHw9Er4fgGDcDy0wswpwSJtO",
+                "05": "1uMHzT_i1BqlSmVWjXq4tT-_RR5FDXtlC",
+                "06": "1m3tE0eEQL5GXj_hiorNkkB33Ub37dCnu",
+                "07": "1_YcrLFaz3ES5oFeb8R2aLyM5IuizCrVX",
+                "08": "1Gq73yEbvnfL5bO1b9XrDf3IFaE8KhEbc",
+                "09": "1a3vrFvFf96qD98GYu5FyGSHw_HX-VxE4",
+                "10": "1SumTwbgfDr_g5DKieq10c1Z84IXWJZYR",
+                "11": "1YioUrTWDaPY20WLHsVfhrJze4KMgANY0",
+                "12": "1EgzATLGSfEnFVFYjmLZtOllIFaWquer6"
+              },
+              "2027": {
+                "01": "10A1hAUaaoNRHC81yZ0t2qyh-zNc8pz3f",
+                "02": "1tiaN8rvTNsOjbhvACuyad28VEnF_KgnP",
+                "03": "10dkCj_Egqi3CdQfpx-mdXRKkBBJq6gX3",
+                "04": "1TzFuQwidNi9-I4qoKRnn0TjRb2sQlkXv",
+                "05": "1v7eHZz3Sw-B-ogggFC-UWUgUizlBfDI2",
+                "06": "18geo0GOXk9BePEK31w_leQrv6AXHmWQF",
+                "07": "1czgY0zLEejWvhQReaFrIOCcDMAegLBIr",
+                "08": "13zMPCJh539uqeCSL5fW-U3zUFtxU46bW",
+                "09": "1Sxlj2VGzXEFhfPEH1gPmo6yf67zDwppc",
+                "10": "1JAiSDYRLvEI1Yj8PB5MqzW-YBapwdw6I",
+                "11": "13EcJGlN0ZdLj0L4axH-3ZRIK_j91AFuA",
+                "12": "1PAI0QOWFbzklWRpWx1ufkSA9dh_lDYQf"
+              }
+            }
+          },
+          "faturas": {
+            "root_folder_id": "1glbQB_CnofxBfBdDNAdHp6CNiktTalIX",
+            "years": {
+              "2025": {
+                "01": "1EWm2yg_BcWiHnJaZyzuI2xXvQGHHSV00",
+                "02": "12K_wS3GP0ci5EjVg7YzApyBW-sG7uGCt",
+                "03": "1tthE-rFAZ_qMa-OyoVld-YISny3L5YxL",
+                "04": "1X2wfaNq9rGojvihxYA1nGqpI4ZpNFE4z",
+                "05": "1zuwdPfBSZzAf-ZHfywiqY_yXndLH33kA",
+                "06": "1oVFMkJV1q4k1vR-WrEe185Eorj5X1AwO",
+                "07": "1eu6uzQfddK0QynX4tgzSop1fNai0SwZG",
+                "08": "1ZAM0dgat7tmx_4FSqaxdWyoZnMEJO0qS",
+                "09": "1oVgNlhGzbUYC7J7EPghwmVlHqJ2ubtGy",
+                "10": "1n221vDGuEqU-p8qtpN1sjyyi3FRi6rbM",
+                "11": "1mgBakqdx4GoaSIYXSlVJQ1EPpUycUcaO",
+                "12": "1MdG6KaO84iSw4HRf5BfuYJmqXk7JgYY3"
+              },
+              "2026": {
+                "01": "1o1KX8QQvMJ0O-jr5eX81GEAg3-ZxlCpT",
+                "02": "1UjtMBPHfE-YHI3ZfLLmYGG1OcH1dqmeL",
+                "03": "1W_Hxw1rUekbB99YPLehBkJfKwGvRUcdG",
+                "04": "1iwHr_yzjeNdpkTJN7ebqGWAQsAZMZY7n",
+                "05": "1cJ5YLmQOhdbbPpWPf9mLJkfTuRJvnYNP",
+                "06": "1klEsMC1-0rZJ0Lz0SvZdIAUI7FygvT9S",
+                "07": "1tC7zRcqpWZyLPod_uNpJkPZhYxqhfkq1",
+                "08": "1NMlBF2WvLE26lndSuUSKKPjaBor1r39y",
+                "09": "1WVio0_DtMjekfPzDYTLMyFRCf1mtX9nd",
+                "10": "1Xw3MZ4ynbtIPkAk-hdEDSH9wvF4_BosR",
+                "11": "1Q0_bpeSWSPDPyiBIoE3c9lPIcamB4HlJ",
+                "12": "1rV32kfYADfiAQ9OfnpjtGlm4svwIQyZi"
+              },
+              "2027": {
+                "01": "1D9728y3UOBieDgxMh0C8KJof3I-U55yv",
+                "02": "1rAerGlRi-OmV3roK7rNGUprJFqcIauvy",
+                "03": "1h8oT-2MpBwY9mOa_KJJ9H85-325H_dd6",
+                "04": "1FTHnId8wus4N3lD5a9qUFlu7G_eXjoiS",
+                "05": "1jO_4ZKNeivDNB6_hg6XfdDtBGMHwfuaW",
+                "06": "1m0vVPomqkOuNRMWNdFD35qaMI7HukZAc",
+                "07": "16ItAJhUBxohwX3gZv-TyGQHLHQKAMvJr",
+                "08": "1GuyQMedCVKXc6eubF626HSzmXenBFQGj",
+                "09": "12p9HwWmFbc1ClVAtsbsp41ZtnXgKjn_d",
+                "10": "1-HNnoapc863h8heoW2uqX-fdYXk_7uep",
+                "11": "1NlOO6VBYcs_DlfnP6MDc16WeVcIWxLxr",
+                "12": "1m7Mn1EgtWOczUqyvbK2eNSm5sU-bin0T"
+              }
+            }
+          }
+        }
+      },
+      "cef": {
+        "bank_folder_id": "1Mr0P3Tc8CtL5YZWmQxUtdEvuyf5JIHDP",
+        "doc_types": {
+          "extratos": {
+            "root_folder_id": "1sbEzLkYMCXTK___ozM-ZlC-Bl5f1fgpK",
+            "years": {
+              "2025": {
+                "01": "16YTNQXOfBsgQ6LJzbUysb4CTXKZXKU8m",
+                "02": "1BvxpFFGM-qNK3BhNPbaNyEhXJPVn_SGN",
+                "03": "19xUoguowNRKg1o8rD6hXZa7gtmqnHG-W",
+                "04": "1-OKdkyfVwGEEzYHmJ-8IN6vRur7sr-xh",
+                "05": "1JyDNioZQ1ud-0mQiXnmGmZ8cD1LrbQ2q",
+                "06": "1iKM5y72rTc8qcE2nD5Mz3AKwU68wxbUZ",
+                "07": "1CMRl8kFDCztND20xWzsE63uhBHDQuqu1",
+                "08": "1TRK1kVKqNo-PYRtF5i30YvmQEzOr9sGa",
+                "09": "1ssRA2ofYXy1qKCfjqtzL3wYlbU_euUDP",
+                "10": "1mmGc0C5vMFIUb5S9RxCX9ecLMrRik_ja",
+                "11": "1TXkMD6jQrIF5UHhiIMWkR2gpe7ifpti2",
+                "12": "11XlU2H62-a4zogw00zqOTRIYr8VBdaJY"
+              },
+              "2026": {
+                "01": "1oOeTJMEW994QFDxkcW3XRd0g7Rkk5enU",
+                "02": "1-NgSSLrbKDNk7F3vN8TGZRTlZTF9FD6r",
+                "03": "173CRPdsUfJfq1hcpfrBqCR90mh-SX2TI",
+                "04": "1kLyx5qserVx_-2xXkt_DuSznKtAEzBfB",
+                "05": "1kDFMKkdf9LErD3CZvFFwY5NQhRDKZ3rv",
+                "06": "1ZJwdRCMLU5WNWQonVwjbPjcYCOJoDlc-",
+                "07": "1uPFA87KkaX1KmRisxNgeWr6WbkMpMo67",
+                "08": "13Bq7KDsc9Rd1E6hXag9URgomrC8ChCcm",
+                "09": "1R137JCsZkjYO8JHn00l0nDfBa4eXJVCo",
+                "10": "1xUkb7ul749I8U78hxtkk3ESv5lDuYU9Y",
+                "11": "1DqYvSxr1bv38QyrnUy6FM5j-e60XSnWB",
+                "12": "1KtwA0Jbj6B_qWuoEW5wU4UNUyWYPwGi6"
+              },
+              "2027": {
+                "01": "1N9z-toKHfLg5YA4s5wURu6YNjtEJ0mGY",
+                "02": "16vDhm5SMM4TJIsH1FJF91dsQpCCd8wRu",
+                "03": "1G9Gzv7sYaYBH0Y6TmsbgJpbqS34LveoY",
+                "04": "1rWPrFMZ1oYpZnDQ9_F2gtipVw5sc4JVu",
+                "05": "1zAO5dA29PeTmp3c1l2O6UGuc_S1G67X1",
+                "06": "1nyCO1FteITMW5-1sUJgg_bw4Vt0KVHmc",
+                "07": "15Rf6ExkJ6I06_q_6XMM3lPH6ZPf90Rr2",
+                "08": "1liYCeldj3eRmf2g7mW8W5tm5r9yCaKD4",
+                "09": "1SQ5f_frU8qbOSGvTgVrOzc_LPnGRkb1T",
+                "10": "1C18GohzgG3uGS4Jn5Fc1C9KwzUaz6QqH",
+                "11": "1WxLhnq_jguf4eka6rUUYeKPSdXIa-9BA",
+                "12": "13mUU2eRby9KywSuVs8M2Ronke_8EOeXm"
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "empresa_padaria_x": {
+    "client_folder_id": "1SaZUc0RrWM7PTMti6LMepLy_F6lZKtGF",
+    "bancos_root_id": "1athazDUSbRWIMnBkpMHfbHnBmMSdF3Xn",
+    "banks": {
+      "bb": {
+        "bank_folder_id": "1yCccqrPZGpH-NGykXUbRJsBgpyJluwSi",
+        "doc_types": {
+          "extratos": {
+            "root_folder_id": "1p45lu_bzefR34LRk9t8HAH0pzVvtuDPY",
+            "years": {
+              "2025": {
+                "01": "1P6gGIIIFUtKpY1M45Ml91l32-CjCqCNC",
+                "02": "1_Z6mkdwHnbrgCQk8jhchjFpT7gys4J6s",
+                "03": "1RJWeSc_TP04qA1Zo4ckstzFQipfUQwIX",
+                "04": "1YbCYFZpwAj0khPzl73zeIFL7Ccv4o03y",
+                "05": "1rJS4WV_yn5GTzCligTCxGNY29Xqr8M97",
+                "06": "1sfxvM6Eo2eijrezfDHviHDVmDZSgn85r",
+                "07": "1x3g-I5jV-4zvYXVYEPlUC5k3He5FprYC",
+                "08": "1WW2f06RjgdCVeptUjWJgx4cUSf8vaFhr",
+                "09": "15xL3eDaX34zRYX8PVwUmOTOnJkviIf1z",
+                "10": "1KflunTuB_zgVMNQNlBTZjXPEdq8FrrY5",
+                "11": "1Sg6CkGfprygRJ83DeOK6Rx-6XejaL8_s",
+                "12": "1TPF4fcw9GTjtgP41heZLY3H6HpYlE1pG"
+              },
+              "2026": {
+                "01": "10PemhZNccE1uxkojBmT28C4wyb1OfMn2",
+                "02": "17eC3SlSaNxqdDSwNKUnFkuqFc2lkMe74",
+                "03": "1ZhcZ05kZa3mQJ8h4FRWkb-dVIbwu1uh_",
+                "04": "1B-VsjKQplS7HvsZ9nkMUww5XUfgNvF5p",
+                "05": "1NY9ZTeC1EoxNUOx82y33jRSsbfejHAxg",
+                "06": "14rIBaL7nQzSqDSKm_CcOSDPRbfK5fORU",
+                "07": "1HS-J5jUyAf2SrAryQbSZX_5AT92PIR1c",
+                "08": "1yYuThQwLPAOu2eAQAne1y35KsyOlEWem",
+                "09": "1aXUfGdsNKcr3N9mToqaz0FHWafuh0-hu",
+                "10": "1orxjY22ynNYAuatBfUKFp5Kkjkftv_RA",
+                "11": "1fW69LiugoTxTzDBijQXEU3_Dmzs1OBkw",
+                "12": "1C06WTql3e75Ktk8kUJ86479aV6TZKZow"
+              },
+              "2027": {
+                "01": "1IAaD_NYz-Vkmqplc2b8BvZoid5Yp8-s9",
+                "02": "13Lb10Rx1pUHv7etyhszTqR98z5iHv240",
+                "03": "1b08xXlKT1L-A_VwQ80dPr4jpIhVQ4Fg4",
+                "04": "1oTVLPli-IsNcXWY2Cxq4ymBIbUdNt4UT",
+                "05": "17NMY2tyQIhZ4WveNfIR9NvDTh_dZAZX7",
+                "06": "1NoxOGf23lp4wUCrECAHybmmweSUKOvj4",
+                "07": "1_z4NLqDOST5iRtLjB5nt47K5y-Y-BV5H",
+                "08": "1T4cx0Z8njeMKriyIiIhCewDXGiMbrecz",
+                "09": "19vE7N-lCCLKHym_GBPQyK6mI0xMihuNr",
+                "10": "1PFA4A4NC2mqKtYCMGyQPxpEkKxW_qSVW",
+                "11": "1gSrpQMpmtTzzEUwhhpJoHNVwK7iCeZ5_",
+                "12": "1Msv1rBAyIfdfNUmDE7Xeg8ZcKyWhNH0N"
+              }
+            }
+          },
+          "faturas": {
+            "root_folder_id": "1w1fTlJPQBm7Cu8xnzT_Sdja_u3Uoxyfx",
+            "years": {
+              "2025": {
+                "01": "17ETK6FiMgNox8WHeVFOVgCN7_rf3elJd",
+                "02": "1Xl5Yax7yboi5B6X0jHr7X9UwiyJxpcD8",
+                "03": "1S0QWsOZWOwL2a_NIVKMhFlKjo3XUYMxr",
+                "04": "18KHHCX3Zx5nGmlhCEDPEqAykUeWhc-8e",
+                "05": "1imdjTJ1i5tKxc56OrwrjTKtROpsGKoUw",
+                "06": "1DMUyGSrAGT1lvE1PiBNv7JATNpqLSj3f",
+                "07": "18ED1EWDPs6bPAU3469nVOPpj_VGbgi0s",
+                "08": "11GL4sD-_XBGjyPM4WbF2TGfD7rPpM5K7",
+                "09": "1VXN4wtiV3OF-RUQ4LzsOZ377ypqngUER",
+                "10": "102CbMT-DQa65-h0oeOAXbZ7BVj82XutK",
+                "11": "1X1KW9q-AVTTQpmc4luffz1Tnp9dmnsJi",
+                "12": "1HmRFll0iWou5YV97hLwDdSHg95zGdEbb"
+              },
+              "2026": {
+                "01": "10UvvFQLTQWdCA5JFcR6FQvdKmZy2QmrU",
+                "02": "14nfy_ynwaq-nzt7r3qv7h4izjsc12rJN",
+                "03": "1V-eH8UrRN7XJTiU_vnHRT0_e-gNfNhab",
+                "04": "1FSOnp00vvxo-p9lvQ4ok-0L6zSUHvg71",
+                "05": "1JpRRlhzmFp9q1bb8gl_WNvVkXSWy_MRa",
+                "06": "1map-XBOjxbTxV-GxW0lxQHhXiUKJkDZL",
+                "07": "1XQ0FgUjI6Cy1kzs3RBFO6ehJSZUXkbeR",
+                "08": "1-1i4WDHbTvmr7taEWJws_B5-4L828Xrm",
+                "09": "1Ptj1r4_ZDcrR0MjIH-xfkFiFlzBNxvi7",
+                "10": "1Zci7gfBCHqsXkEj6ELtn_t5SQX9ZkVgP",
+                "11": "1Kn3L6ttIXa7kxew9BzFUf_Y78MHLoRRV",
+                "12": "1s-uF8OBwf9wit_r84u8y_35FuKmh3Kvb"
+              },
+              "2027": {
+                "01": "1kPwgbw606bMBhNNp6frSssLj8oG9nCT7",
+                "02": "1EsCimZo5uG1Qp1yDv7K0UcLQwAEEcTkq",
+                "03": "1nh14qwGk0YgicNxfn9ytf56e3XIBvSCe",
+                "04": "14xKLEdsfn8TAOgEiRke1sRDslqU-upwH",
+                "05": "1wyUN_0nLMz8nzZMxae2NFac-VkICGEWP",
+                "06": "1p1YsRhvI4FAptJ0SOH0M5Ezi_ktI0hup",
+                "07": "11wQR8j_3WDVIJ4r4YKP3hJkWQbHwMcXd",
+                "08": "1_vnVhMBK5Iy8Pex7DukzdWXNKnAWwEqu",
+                "09": "1jcZSdKbPZGU_jGgPTCs_1_4QEsC_IXhz",
+                "10": "1IjaW76iemKkxVe71IvMFokzrV4fm1VBa",
+                "11": "1-07RFJ8iqK6CeQhIC7q_csrp4wOPBa5G",
+                "12": "1lclqCwZQ0xWzOZ75DaOsEOmlhc8uWBJi"
+              }
+            }
+          }
+        }
+      },
+      "bradesco": {
+        "bank_folder_id": "1oVNek9adQCj-YYAdFeFgoI0hTdEuI9AS",
+        "doc_types": {
+          "extratos": {
+            "root_folder_id": "1t5LN1YCcjH915HgvK0xfgLi_NWQF9RoO",
+            "years": {
+              "2025": {
+                "01": "1PWwgSXijXJCpgqG0ivlFu0IAL9kpmxA6",
+                "02": "1u3Sp-xbCB9Dae2TggkTTCKjC77M6TJkp",
+                "03": "1PRR6OkR6vB8YGkJEqenvXSTI-51VvmP1",
+                "04": "1D4E_W6lAa8MQg4vHRj5DkcFQTBTpPraT",
+                "05": "1lz0gJ83znsk6dmOpgoWIvAoQUAQKieqA",
+                "06": "1MjjK2QnWrc6H14C7oEDMBQNSjXicuC_w",
+                "07": "1Kzr5UfnlFBSRuikBOj82NqfAvQKueECS",
+                "08": "1SyDhmplYz4gBCZ23w_gpkjmPD3XkLhHr",
+                "09": "1b6nO7fd6wuuhxUYrWZn768zeALk-ZQVK",
+                "10": "1kBu86jpYSoL2FTwmxU6b7dWy_047qA0F",
+                "11": "1bvQCaWBiOJrr4FngBY2QvWZcKGti6prO",
+                "12": "1zI_5QUMIvP6aDXpTU0r5ttWvisKQ38pZ"
+              },
+              "2026": {
+                "01": "1XwZs0gMX7axLKU1RUbt6MvdBGVB3jIb1",
+                "02": "1VjhQgFuYFwO9mbWh2mFiHGhU2T7rx3eV",
+                "03": "1E7PlSA4ER5CvkoBZHPEmanC95_YPg4R3",
+                "04": "1k4ANzY-uL0vjxIpKB0j8PrxwmdA4_tOI",
+                "05": "1SAbA67xq5k_giXeIjd0PwBaz5WpNK1tg",
+                "06": "1ZypteR9QuVrHPduLVg6S7qdp4qgji2uJ",
+                "07": "1q66ISthmADeAA-iEX5xI1fVCoZhbSdQu",
+                "08": "109tQKnZt8oYhvsu7TLPsbDjFkxaqMhBN",
+                "09": "140_h_GEr-uyTMmldv0xecXSKVutqEaOB",
+                "10": "1fLyM_i-JQZyGD3a2tk-5M_BiG0B71a9r",
+                "11": "1dDZH-xQbz0U1sIw_kkN1n8jE1Dmumlnq",
+                "12": "1u1d4wb03LzBAb0Q4KiPeUQK3uPeDAHTU"
+              },
+              "2027": {
+                "01": "1O83ZFRfFU-lmVM8_u--jopkd5tfCAi9j",
+                "02": "1qORKAqdEpILzStL4yQAugeNY5Vuo_Y81",
+                "03": "1jNaI7I9zk17cauoRl4VVaZYE7tW4Zt5i",
+                "04": "1SaQJTNhCWOSAGlFC5otWScd91Vw1WtEP",
+                "05": "17vLNJ42cLV6KqHm9Qso8tVecFGlNbGeN",
+                "06": "1bN1tybgVzxyIi8zGsRO92rXdhHUscuHY",
+                "07": "1zBTH_iydrIGXbuVzylVWylu7ChcoofMI",
+                "08": "13EOJDaPfiboCHRBlcM-2NBg8duKDCtbu",
+                "09": "1m7SYwb3-ZyvAK4PzQzvVbpUvX7ZF2zN6",
+                "10": "1-lD3YwTOnHAWeLMVMBdjdR2vw3HHLkQI",
+                "11": "1Tur-HC07ZamPkpRbkO1s0jLNoB2wYKVM",
+                "12": "1EU60UC8v1FlNgvWykANWsRRwbjPHGc7r"
+              }
+            }
+          },
+          "faturas": {
+            "root_folder_id": "1jBDD0P6GNRpAMJTG-r48UTnmfmfbF56D",
+            "years": {
+              "2025": {
+                "01": "1CfalkL76y_I2HWPUJDyzsGUJNkBOzjZ7",
+                "02": "16QLaLqo6UsWVOsO7A9-8WIvG9iLy23RQ",
+                "03": "1Qd7-dOA8rJ8qK85MH4-Do8Xhm1S1I0-G",
+                "04": "1EQLHSXndCHSpDzEmkFK7hwKtUgdnb5-r",
+                "05": "1dvLU6o7q1dN--BIKpPcmJUwkCpovIxil",
+                "06": "1q0aL5OclGafhs2U6PP98_fDLKWtPDNYi",
+                "07": "1E7xD3e8NBp-Ie3eCOjACU1glE-uwOuuy",
+                "08": "1KZokCrxx3iaT5k5hh5ex3hVzVGGZlGOa",
+                "09": "1P3L30rtivU3kJRXDe3KA9WMY1P67SwwV",
+                "10": "1JvpGulm1IhNeF_X3WrYJhTN6bCr90ZFJ",
+                "11": "1J0jECyJibwE2srf-8X0JOkbZ-rE3OzYi",
+                "12": "1l2kM2hW6aH90zDF3Ye5GVC7BBHfbK3uG"
+              },
+              "2026": {
+                "01": "1Qk7T5aBOzH_tUlnc6PudjC70lK8iMOCo",
+                "02": "1W9XN-uDlgvKMTrgOfpPnWKtGIuG5kFg4",
+                "03": "1m8rDc7nUimv4sZCERj2rQPuhQtKHmRLk",
+                "04": "1za22pbiTE9NEnIwAW1MgaQYySG9qjjAG",
+                "05": "1FwT3SZtthlSUxaKpaEdRf2Gx9YVOJRZj",
+                "06": "1KXhyZjJmcZv0Yifs9DXKviCkfYkosbke",
+                "07": "1l_1pcs009c4sA4Kh0eXlzHpyML1suJtM",
+                "08": "1WUokR15_icWNmMIjV_QfjyPI6TAZMEJX",
+                "09": "1KnERJqoH0fgvoxxE-QGNWzUJovP3SOeX",
+                "10": "1aTbXi3Pwf84Pz07KnYZCiOBOkQJuW8-p",
+                "11": "1jSayoR3UwgLtgK52kjMJ91FxMMswy8EO",
+                "12": "1sDY6882tUlXRlE39sPr_Qf47XcMU8WGS"
+              },
+              "2027": {
+                "01": "1gAyM779RtxzBp1wkniS53xkcJsVrbrNl",
+                "02": "1RHWie9-7PO40shQEOJkr2br82a9-4ABu",
+                "03": "1rE2BXgRr9sMcn9S5x5pj-MlVcrG0EvM9",
+                "04": "17OFL5qH5xh5Hfv-wN9BsfhYMVhL70EIL",
+                "05": "1bLmP2i0upE9hSBh66_Er7bCvkRXdmAm-",
+                "06": "1bG6F6-69Ee9zbSW7m6KiDgEEuMtwUSI_",
+                "07": "1J7kpDW4jsO9WTrvowQbHEJd6RURD3GiB",
+                "08": "1RYCSh7Of75l6pzIB7yWc-bT_E1c7nRIZ",
+                "09": "1R4pPSoEZWTdtOuhoTaZMuok32zNdjF0E",
+                "10": "10hzbufO9e7hbyfZh9bghipGBARcHmrCI",
+                "11": "1fI5vdVmqhzQppDwnuiD5SUMrC9ZRSq2d",
+                "12": "1sqwPCFzWgsJcA1dUD9KgTQfOoI-rhYMO"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

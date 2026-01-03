@@ -1,0 +1,154 @@
+Carimbo de data/hora,LANÇAMENTO FEITO POR:,DATA DO PAGAMENTO,"VENCIMENTO
+Colocar sempre o mês da prestação de conta",DESCRIÇÃO,"Valor:
+Exemplo: R$40,00",TIPO DE CUSTO,CATEGORIA
+08/07/2025 09:21:43,Valesca,07/07/2025,01/08/2025,"Ovo, alface,  rúcula no mercadinho São Luiz",,Variavel,1. Alimentação
+11/07/2025 10:04:54,Valesca,11/07/2025,01/08/2025,Agua,28,Variavel,1. Alimentação
+11/07/2025 18:44:11,Sergio,11/07/2025,01/08/2025,Gasolina HB20S ,"237,63",Variavel,"5. Transporte (combustível, Uber, passagem)"
+11/07/2025 18:45:41,Sergio,07/07/2025,01/08/2025,Água ,28,Variavel,"3. Água, Luz e Gás"
+13/07/2025 15:38:08,Sergio,13/07/2025,01/08/2025,"Leroy - caixa para água e painel tv , etc..","797,56",Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+13/07/2025 16:11:28,Sergio,13/07/2025,01/08/2025,Gasolina fit ,"267,63",Variavel,"5. Transporte (combustível, Uber, passagem)"
+15/07/2025 22:46:45,Sergio,15/07/2025,01/08/2025,Azilados,"92,6",Variavel,1. Alimentação
+16/07/2025 18:56:51,Sergio,10/07/2025,01/08/2025,Registro hidráulico docol,99,Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+16/07/2025 18:57:51,Sergio,10/07/2025,01/09/2025,Registro hidráulico docol (parcela 2),99,Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+16/07/2025 19:00:39,Sergio,26/06/2025,01/08/2025,Açaí w. Soares (família),"68,98",Variavel,1. Alimentação
+21/07/2025 08:40:37,Valesca,21/07/2025,01/08/2025,"388,29 - Esse pagamento foi feito no nosso cartão, porém é um pedido meu( Valesca)","388,29 ifood",Variavel,20. Outros
+21/07/2025 08:41:13,Valesca,21/08/2025,01/08/2025,Agua,28,Variavel,1. Alimentação
+21/07/2025 14:22:13,Sergio,21/07/2025,01/08/2025,Lavagem HB20S ,30,Variavel,"5. Transporte (combustível, Uber, passagem)"
+23/07/2025 11:56:54,Valesca,23/07/2025,01/08/2025,Nathana comprou coisas com pix dela,31,Variavel,1. Alimentação
+24/07/2025 14:39:40,Sergio,24/07/2025,01/08/2025,Lavagem Fit,27,Variavel,"5. Transporte (combustível, Uber, passagem)"
+24/07/2025 16:52:33,Sergio,24/07/2025,01/08/2025,Pix cartão inter,100,Variavel,1. Alimentação
+24/07/2025 21:16:41,Sergio,24/07/2025,01/08/2025,Pão de açúcar (pão e pipoca),"71,74",Variavel,1. Alimentação
+25/07/2025 10:29:39,Valesca,25/07/2025,01/08/2025,Agua,28,Variavel,1. Alimentação
+25/07/2025 10:30:36,Valesca,25/07/2025,01/08/2025,Churrasco Gabi e Isaac,130,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+27/07/2025 12:02:22,Sergio,27/07/2025,01/08/2025,Galeto c/Baião linguiça ,"70,45",Variavel,1. Alimentação
+27/07/2025 12:03:05,Sergio,26/07/2025,01/08/2025,Base garrafão Água ,20,Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+27/07/2025 12:06:20,Sergio,26/07/2025,01/08/2025,Caju e tangerina ,20,Variavel,1. Alimentação
+27/07/2025 12:16:10,Sergio,27/07/2025,01/08/2025,Picolés frosty ,"32,94",Variavel,1. Alimentação
+28/07/2025 15:44:24,Valesca,17/07/2025,01/08/2025,Remedio Laura,"180,8",Variavel,"6. Saúde (plano, remédios, consultas)"
+29/07/2025 23:17:34,Sergio,29/07/2025,01/09/2025,Jantar feijão verde ,"97,22",Variavel,1. Alimentação
+31/07/2025 11:20:44,Valesca,25/07/2025,01/09/2025,Agua,28,Fixo,1. Alimentação
+31/07/2025 11:21:21,Valesca,30/07/2025,01/09/2025,Agua,28,Variavel,1. Alimentação
+31/07/2025 19:51:00,Sergio,31/07/2025,01/09/2025,Gasolina HB20S ,"273,11",Variavel,"5. Transporte (combustível, Uber, passagem)"
+01/08/2025 13:32:33,Sergio,01/08/2025,01/09/2025,Frosty,"31,45",Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+03/08/2025 15:27:47,Sergio,03/08/2025,01/09/2025,Galeto Costa Mendes,"59,96",Variavel,1. Alimentação
+03/08/2025 15:29:30,Sergio,02/08/2025,01/09/2025,Corte Cabelo (Isaac e Marcos),80,Variavel,"10. Beleza (salão, cosméticos)"
+03/08/2025 15:31:55,Sergio,28/07/2025,01/09/2025,Padaria Santa Luzia ,"28,7",Variavel,1. Alimentação
+03/08/2025 15:32:42,Sergio,02/08/2025,01/09/2025,Estacionamento Iguatemi ,13,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+03/08/2025 19:25:17,Sergio,02/08/2025,01/09/2025,"91,9","Barato coletivo,- Chico Sul",Variavel,1. Alimentação
+05/08/2025 09:45:58,Valesca,05/08/2025,01/09/2025,Impressão das fotos dia dos pais,"21,96",Variavel,20. Outros
+05/08/2025 19:20:53,Sergio,05/08/2025,01/09/2025,Padaria Santa Luzia ,"36,88",Variavel,1. Alimentação
+10/08/2025 19:58:00,Sergio,10/08/2025,01/09/2025,4 play ,86,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+12/08/2025 08:03:38,Valesca,11/08/2025,01/09/2025,"São Luiz- Frango, carne, salada",101,Variavel,1. Alimentação
+12/08/2025 08:07:20,Valesca,12/08/2025,01/09/2025,Combustível ,100,Fixo,"5. Transporte (combustível, Uber, passagem)"
+13/08/2025 08:57:46,Valesca,13/08/2025,01/09/2025,Pagamento do PLay Salinas - Sergio,30,Variavel,"6. Saúde (plano, remédios, consultas)"
+14/08/2025 08:33:32,Sergio,14/08/2025,01/09/2025,Gasolina Shell,"273,78",Variavel,"5. Transporte (combustível, Uber, passagem)"
+15/08/2025 13:16:27,Sergio,15/08/2025,01/09/2025,Day use 4play,40,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+15/08/2025 13:17:12,Sergio,15/08/2025,01/09/2025,Padaria (pães) ,"7,07",Variavel,1. Alimentação
+15/08/2025 13:18:08,Sergio,15/08/2025,01/09/2025,Ovos e frutas - Pão de Açúcar ,"52,81",Variavel,1. Alimentação
+18/08/2025 20:41:31,Sergio,18/08/2025,01/09/2025,Leroy (roldanas e chuveiro hig.),"393,56",Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+18/08/2025 20:42:07,Sergio,18/08/2025,01/09/2025,Pneu vulcanização ,50,Variavel,"5. Transporte (combustível, Uber, passagem)"
+19/08/2025 13:05:23,Valesca,19/08/2025,01/09/2025,Agua,28,Fixo,1. Alimentação
+19/08/2025 19:45:01,Sergio,19/08/2025,01/09/2025,Cartão casa,60,Variavel,1. Alimentação
+24/08/2025 23:41:14,Sergio,23/08/2025,01/09/2025,Vignoli pais creche ,"58,9",Variavel,1. Alimentação
+24/08/2025 23:42:16,Sergio,24/08/2025,01/09/2025,PIB Jantar,38,Variavel,1. Alimentação
+24/08/2025 23:43:39,Sergio,22/08/2025,01/09/2025,Bosque Beach tennis ,63,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+26/08/2025 08:51:54,Valesca,25/08/2025,01/09/2025,Mimos lembrancinha da Laura,135,Variavel,20. Outros
+26/08/2025 08:52:38,Valesca,22/08/2025,01/09/2025,Canoa e fotos,44,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+26/08/2025 08:54:21,Valesca,18/08/2025,01/09/2025,Aniversario tia Flavinha,50,Variavel,20. Outros
+26/08/2025 08:54:54,Valesca,11/08/2025,01/09/2025,Aniversario estagiaria sala da Laura,50,Variavel,20. Outros
+26/08/2025 09:38:07,Valesca,26/08/2025,01/09/2025,Mimos das lembrancinhas,218,Variavel,20. Outros
+26/08/2025 14:30:49,Sergio,26/08/2025,01/09/2025,Pix lavagem Fit (pão de açúcar),27,Variavel,"5. Transporte (combustível, Uber, passagem)"
+27/08/2025 06:30:28,Sergio,26/08/2025,01/10/2025,Posto Shell (Gasolina Fit),"254,86",Variavel,"5. Transporte (combustível, Uber, passagem)"
+27/08/2025 09:09:03,Valesca,26/08/2025,01/09/2025,Lavagem do carro,70,Variavel,1. Alimentação
+27/08/2025 10:22:04,Valesca,27/08/2025,01/09/2025,Bolo Laura,180,Variavel,1. Alimentação
+27/08/2025 10:35:52,Valesca,26/08/2025,01/09/2025,Play salinas,30,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+28/08/2025 19:41:17,Sergio,28/08/2025,01/10/2025,Frangolandia (carne e frutas),"193,87",Variavel,1. Alimentação
+29/08/2025 13:54:46,Sergio,01/10/2025,29/08/2025,Sesc (refeições),200,Variavel,1. Alimentação
+01/09/2025 07:45:30,Sergio,29/08/2025,01/10/2025,Estacionamento (aniversário Lara),12,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+01/09/2025 07:47:39,Sergio,29/08/2025,01/10/2025,Camarada Camarões (Hambúrguer),"125,6",Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+01/09/2025 07:48:30,Sergio,31/08/2025,01/10/2025,Cometa supermercado ,"125,85",Variavel,1. Alimentação
+01/09/2025 07:49:30,Sergio,31/08/2025,01/10/2025,Farmácia (Fraldas),"179,8",Variavel,"6. Saúde (plano, remédios, consultas)"
+01/09/2025 11:25:06,Valesca,01/09/2025,01/10/2025,Agua,28,Fixo,1. Alimentação
+02/09/2025 20:07:20,Sergio,02/09/2025,01/10/2025,Cabelo Isaac ,40,Variavel,"10. Beleza (salão, cosméticos)"
+02/09/2025 20:25:34,Sergio,02/09/2025,01/10/2025,Adicional Adultos (Plus),"379,5",Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+05/09/2025 08:40:22,Sergio,05/09/2025,01/10/2025,Pix no Inter (compras da casa),100,Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+11/09/2025 19:06:09,Sergio,11/09/2025,01/10/2025,Gasolina Fit ,"193,16",Variavel,"5. Transporte (combustível, Uber, passagem)"
+17/09/2025 21:48:57,Sergio,17/09/2025,01/10/2025,Espetos para jantar ,73,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+30/09/2025 14:36:24,Sergio,30/09/2025,01/11/2025,Pneu semi-novo Fit ,200,Variavel,"5. Transporte (combustível, Uber, passagem)"
+30/09/2025 14:37:02,Sergio,27/09/2025,01/11/2025,Cabelo Marcos ,60,Variavel,"10. Beleza (salão, cosméticos)"
+01/10/2025 18:27:29,Sergio,30/09/2025,01/10/2025,"323,2",2 pneus+ alinhamento balanceamento ,Variavel,"5. Transporte (combustível, Uber, passagem)"
+01/10/2025 18:28:38,Sergio,30/09/2025,01/11/2025,2 pneus+ alinhamento balanceamento ,"323,2",Variavel,"5. Transporte (combustível, Uber, passagem)"
+01/10/2025 18:29:42,Sergio,30/09/2025,01/12/2025,2 pneus+ alinhamento balanceamento ,"323,2",Variavel,"5. Transporte (combustível, Uber, passagem)"
+04/10/2025 19:22:12,Sergio,02/10/2025,01/11/2025,Ar condicionado (limpeza),300,Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+04/10/2025 19:22:46,Sergio,02/10/2025,01/12/2025,Ar condicionado limpeza ,300,Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+10/10/2025 09:07:07,Valesca,25/09/2025,01/10/2025,Contribuição para o presente dos professores Laura e Marcos,30,Variavel,"7. Educação (escola, cursos, material)"
+10/10/2025 09:08:09,Valesca,30/09/2025,01/10/2025,Inscrição 4play,40,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+10/10/2025 09:09:16,Valesca,30/09/2025,01/10/2025,"Presenta dos professores 2a(48,00) / 4a(30,00)",78,Variavel,"7. Educação (escola, cursos, material)"
+10/10/2025 09:10:10,Valesca,30/09/2025,01/10/2025,50% das fotos Roberta,250,Variavel,13. Presentes e Doações
+10/10/2025 09:10:45,Valesca,30/09/2025,01/10/2025,Dia das crianças creche,90,,"7. Educação (escola, cursos, material)"
+10/10/2025 09:11:25,Valesca,30/09/2025,01/10/2025,Inscrição BT - FEC,130,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+10/10/2025 09:11:40,Sergio,10/10/2025,01/11/2025,Cartão inter (compras casa),50,Variavel,1. Alimentação
+10/10/2025 13:39:53,Sergio,10/10/2025,01/11/2025,Picolés frosty,"44,78",Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+11/10/2025 11:52:24,Sergio,11/10/2025,01/10/2025,Capa e película isaac,30,Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+12/10/2025 17:00:28,Sergio,12/10/2025,01/11/2025,"191,83",Frangolandia ,Variavel,1. Alimentação
+16/10/2025 08:37:01,Sergio,16/10/2025,01/11/2025,Pix no cartão Inter,100,Variavel,1. Alimentação
+20/10/2025 03:41:19,Sergio,19/10/2025,01/11/2025,Camarão BM,70,Variavel,1. Alimentação
+20/10/2025 03:42:14,Sergio,18/10/2025,01/11/2025,Açaí Isaac ,"27,13",Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+29/10/2025 08:51:43,Sergio,29/10/2025,01/11/2025,Cartão inter ,100,Variavel,1. Alimentação
+29/10/2025 14:03:09,Sergio,29/10/2025,01/11/2025,Sesc almoços ,250,Fixo,1. Alimentação
+30/10/2025 13:30:56,Sergio,30/10/2025,01/11/2025,Pix 2A - creche ,"43,5",Variavel,"7. Educação (escola, cursos, material)"
+02/11/2025 10:45:26,Sergio,02/11/2025,01/11/2025,Pix PIB Fortaleza ,25,Fixo,13. Presentes e Doações
+02/11/2025 17:41:05,Sergio,02/11/2025,01/12/2025,Amazon: produtos de limpeza ,"254,61",Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+03/11/2025 09:56:57,Sergio,03/11/2025,01/11/2025,Pix passeio das crianças na Creche,80,Variavel,"7. Educação (escola, cursos, material)"
+03/11/2025 10:48:41,Valesca,22/10/2025,01/11/2025,Pai da Esther,210,Variavel,20. Outros
+03/11/2025 11:35:50,Valesca,31/10/2025,01/11/2025,2ª parcela das fotos da Laura,250,Variavel,20. Outros
+03/11/2025 11:36:32,Valesca,27/10/2025,01/11/2025,Chocolate aeroporto das crianças,"63,6",Variavel,20. Outros
+03/11/2025 11:37:07,Valesca,21/10/2025,01/11/2025,Sapato e meia da Laura,126,Variavel,9. Vestuário
+03/11/2025 11:37:41,Valesca,31/10/2025,01/11/2025,Agua,140,,1. Alimentação
+03/11/2025 19:20:55,Sergio,03/11/2025,01/11/2025,Cabelo Isaac (créditos do pacote passado),40,Variavel,"10. Beleza (salão, cosméticos)"
+03/11/2025 19:50:57,Sergio,03/11/2025,01/12/2025,"Sams café, filtro café e granola ","104,71",Variavel,1. Alimentação
+04/11/2025 08:54:43,Sergio,04/11/2025,01/11/2025,Pix no Inter ,100,Fixo,1. Alimentação
+05/11/2025 09:41:49,Sergio,05/11/2025,01/11/2025,Natação crianças ,300,Fixo,"6. Saúde (plano, remédios, consultas)"
+06/11/2025 10:29:32,Sergio,03/11/2025,01/12/2025,"Leroy Merlin (suporte papel higiênico, registro chuveiro, ducha higiênica nosso banheiro, pilhas para os brinquedos)","320,53",Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+06/11/2025 11:37:15,Sergio,06/11/2025,01/12/2025,Lavagem HB20 ,28,Fixo,"5. Transporte (combustível, Uber, passagem)"
+10/11/2025 09:04:11,Sergio,10/11/2025,01/12/2025,Pix inter - compras casa,100,Fixo,1. Alimentação
+20/11/2025 10:56:17,Sergio,20/11/2025,01/12/2025,Gasolina Fit ,"275,4",Variavel,"5. Transporte (combustível, Uber, passagem)"
+23/11/2025 12:32:06,Sergio,23/11/2025,01/12/2025,Galeto - almoço Domingo ,"84,7",Variavel,1. Alimentação
+23/11/2025 12:36:21,Sergio,22/11/2025,01/12/2025,Taxas de embarque - São Paulo + Milhas compradas ,"251,04",Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+27/11/2025 10:12:44,Valesca,27/11/2025,01/12/2025,Agua do mês,135,Fixo,"3. Água, Luz e Gás"
+27/11/2025 10:13:34,Valesca,18/11/2025,01/12/2025,Presente tia Aninha,60,Fixo,13. Presentes e Doações
+27/11/2025 10:16:24,Valesca,27/11/2025,01/12/2025,Cota extra de Novembro,100,Fixo,"7. Educação (escola, cursos, material)"
+27/11/2025 10:17:39,Valesca,22/11/2025,01/12/2025,Pizza confraternização - 2A,"104,7",Variavel,20. Outros
+27/11/2025 10:18:32,Valesca,18/11/2025,01/12/2025,Bolo aniversario do Marcos,60,Variavel,20. Outros
+27/11/2025 10:18:57,Valesca,18/11/2025,01/12/2025,Topo de bolo Marcos,25,Variavel,20. Outros
+27/11/2025 10:19:47,Valesca,18/11/2025,01/12/2025,Kit lanche 50% Marcos,260,Variavel,20. Outros
+29/11/2025 00:26:46,Sergio,24/11/2025,01/12/2025,Amazon - panela de pressão e livros crianças (parc 1),"299,54",Fixo,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+29/11/2025 00:27:24,Sergio,24/11/2025,01/01/2026,Amazon - panela de pressão e livros crianças (parc 2),"299,54",Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+29/11/2025 00:33:03,Sergio,29/11/2025,01/01/2026,Amazon brinquedo cheche + omo ,"261,8",Variavel,"7. Educação (escola, cursos, material)"
+30/11/2025 19:44:58,Sergio,30/11/2025,01/12/2025,Black Friday - mercadinho São Luís ,"912,5",Variavel,1. Alimentação
+30/11/2025 20:22:00,Sergio,30/11/2025,01/01/2026,Frangolandia - feira,"152,31",Fixo,1. Alimentação
+02/12/2025 13:33:27,Sergio,02/12/2025,01/01/2026,Pix Sesc - almoços,100,Fixo,1. Alimentação
+02/12/2025 23:24:01,Sergio,02/12/2025,01/12/2025,Controle remoto - tv do Isaac,30,Variavel,"14. Manutenção da Casa (reparos, produtos de limpeza)"
+02/12/2025 23:26:28,Sergio,30/11/2025,01/12/2025,Churrasco fim de ano IA/Dados,110,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+07/12/2025 13:27:54,Sergio,07/12/2025,01/01/2026,Almoço Fortaleza grill ,"134,26",Variavel,1. Alimentação
+09/12/2025 08:25:52,Sergio,08/12/2025,01/01/2026,Lavagem HB20S ,55,Variavel,"5. Transporte (combustível, Uber, passagem)"
+10/12/2025 09:20:20,Sergio,10/12/2025,01/01/2026,Água casa ,30,Variavel,"3. Água, Luz e Gás"
+11/12/2025 16:11:38,Sergio,11/12/2025,01/01/2026,Floratil ,"62,79",Variavel,"6. Saúde (plano, remédios, consultas)"
+11/12/2025 16:13:10,Sergio,11/12/2025,01/01/2026,Farmácia Drogasil ,"296,97",Variavel,"6. Saúde (plano, remédios, consultas)"
+13/12/2025 15:13:35,Sergio,13/12/2025,01/01/2026,Livros SFB - Laura e Marcos,"234,2",Fixo,"7. Educação (escola, cursos, material)"
+13/12/2025 15:14:29,Sergio,13/12/2025,01/02/2026,Livros SFB - Laura e Marcos,"234,2",Fixo,"7. Educação (escola, cursos, material)"
+13/12/2025 15:15:17,Sergio,13/12/2025,01/03/2026,Livros SFB - Laura e Marcos (parc. 3),"234,2",Fixo,"7. Educação (escola, cursos, material)"
+13/12/2025 15:16:02,Sergio,13/12/2025,01/04/2026,Livros SFB - Laura e Marcos (parc. 4),"234,2",Fixo,"7. Educação (escola, cursos, material)"
+13/12/2025 15:16:41,Sergio,12/12/2025,01/05/2026,Livros SFB - Laura e Marcos (parc. 5),"234,2",Fixo,"7. Educação (escola, cursos, material)"
+13/12/2025 15:17:29,Sergio,13/12/2025,01/06/2026,Livros SFB - Laura e Marcos (parc. 6),"234,2",Fixo,"7. Educação (escola, cursos, material)"
+15/12/2025 13:37:52,Valesca,08/12/2025,01/12/2025,Churrasco Salinas,130,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+15/12/2025 16:49:04,Valesca,15/12/2025,01/01/2026,Remedio novalgina - Cartão estava bloqueado,"43,99",Variavel,"6. Saúde (plano, remédios, consultas)"
+16/12/2025 15:21:38,Valesca,09/12/2025,01/01/2026,Lavagem do carro,60,Variavel,20. Outros
+16/12/2025 15:23:45,Valesca,04/12/2025,01/01/2026,Presente Natal professores 2A,100,Variavel,20. Outros
+16/12/2025 15:24:26,Valesca,03/12/2025,01/01/2026,48,Balão e flores apresentação das crianças,Variavel,20. Outros
+21/12/2025 19:13:24,Sergio,21/12/2025,01/01/2026,Réveillon PIB,180,Variavel,"8. Lazer (cinema, restaurantes, viagens)"
+23/12/2025 14:28:15,Valesca,17/12/2025,01/01/2026,Compras no pão de açucar,"165,86",Variavel,1. Alimentação
+23/12/2025 14:28:50,Valesca,18/12/2025,01/01/2026,Encontro dos pais,123,Variavel,20. Outros
+23/12/2025 14:42:34,Valesca,23/12/2025,01/01/2026,16 escovas de dentes para a creche,49,Variavel,20. Outros
+28/12/2025 19:56:23,Sergio,28/12/2025,01/02/2026,Frangolandia (casa),"54,65",Variavel,1. Alimentação
+28/12/2025 19:59:31,Sergio,27/12/2025,01/02/2026,Cidade mais infância (lanches),43,Variavel,1. Alimentação

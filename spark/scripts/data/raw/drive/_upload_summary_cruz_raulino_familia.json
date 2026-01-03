@@ -1,0 +1,54 @@
+[
+  {
+    "file_id": "1GeyFykmg3BkyNmfWBU2Jwp77Prbfv-wj",
+    "file_name": "extrato.pdf",
+    "client_slug": "cruz_raulino_familia",
+    "bank_code": "bb",
+    "doc_type": "extratos",
+    "year": "2026",
+    "month": "01",
+    "drive_modifiedTime": "2026-01-03T11:52:23.000Z",
+    "drive_size": "8162",
+    "status": "uploaded",
+    "s3a_uri": "s3a://sdl-lnd-fin/fintrack/01_clientes/cruz_raulino_familia/01_bancos/bb/extratos/2026/01/extrato.pdf"
+  },
+  {
+    "file_id": "1oOFlNGN5saDTAXPufj2fuF-7Ak_1jsOr",
+    "file_name": "OUROCARD_VISA_INFINITE-Jan_26.pdf",
+    "client_slug": "cruz_raulino_familia",
+    "bank_code": "bb",
+    "doc_type": "faturas",
+    "year": "2026",
+    "month": "01",
+    "drive_modifiedTime": "2026-01-03T11:55:50.000Z",
+    "drive_size": "276178",
+    "status": "uploaded",
+    "s3a_uri": "s3a://sdl-lnd-fin/fintrack/01_clientes/cruz_raulino_familia/01_bancos/bb/faturas/2026/01/OUROCARD_VISA_INFINITE-Jan_26.pdf"
+  },
+  {
+    "file_id": "1uXdpWvi1CQJAR76YMWPuZfRB2xZhe7kA",
+    "file_name": "Bradesco_03012026_091353.pdf",
+    "client_slug": "cruz_raulino_familia",
+    "bank_code": "bradesco",
+    "doc_type": "extratos",
+    "year": "2026",
+    "month": "01",
+    "drive_modifiedTime": "2026-01-03T12:13:54.000Z",
+    "drive_size": "15997",
+    "status": "uploaded",
+    "s3a_uri": "s3a://sdl-lnd-fin/fintrack/01_clientes/cruz_raulino_familia/01_bancos/bradesco/extratos/2026/01/Bradesco_03012026_091353.pdf"
+  },
+  {
+    "file_id": "135v8AErs2T5VPxyzU-JPrYQHbB44KgNX",
+    "file_name": "Bradesco 03_01_2026 09_18_59.pdf",
+    "client_slug": "cruz_raulino_familia",
+    "bank_code": "bradesco",
+    "doc_type": "faturas",
+    "year": "2026",
+    "month": "01",
+    "drive_modifiedTime": "2026-01-03T12:18:59.000Z",
+    "drive_size": "134923",
+    "status": "uploaded",
+    "s3a_uri": "s3a://sdl-lnd-fin/fintrack/01_clientes/cruz_raulino_familia/01_bancos/bradesco/faturas/2026/01/Bradesco 03_01_2026 09_18_59.pdf"
+  }
+]

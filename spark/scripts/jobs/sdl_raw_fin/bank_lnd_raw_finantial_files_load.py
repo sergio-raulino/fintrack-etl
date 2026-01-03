@@ -14,14 +14,38 @@ def main() -> None:
 
     ap = argparse.ArgumentParser(
         description=(
-            "Lê PDFs bancários na landing do FinTrack (MinIO) e grava "
-            "em tabelas Iceberg na camada RAW, particionadas por ingestao_year/month/day."
+            "Lê PDFs bancários na landing do FinTrack (MinIO) em "
+            "fintrack/01_clientes/<client>/01_bancos/<bank>/<doc_type>/<ano>/<mes>/ "
+            "e grava em tabelas Iceberg na camada RAW, particionadas por "
+            "ingestao_year/month/day."
         )
     )
     ap.add_argument(
-        "--landing-prefix",
-        default="fintrack/movimentacoes_25_11/",
-        help="Prefixo relativo dentro do bucket landing (ex.: fintrack/movimentacoes_25_11/).",
+        "--client",
+        default="cruz_raulino_familia",
+        help="Slug do cliente (ex.: cruz_raulino_familia).",
+    )
+    ap.add_argument(
+        "--bank",
+        default=None,
+        help="Código do banco (ex.: bb, bradesco). Se omitido, processa todos os bancos.",
+    )
+    ap.add_argument(
+        "--doc-type",
+        default=None,
+        help="Tipo de documento (ex.: extratos, faturas). Se omitido, processa ambos.",
+    )
+    ap.add_argument(
+        "--year",
+        type=int,
+        default=None,
+        help="Ano específico (YYYY). Se omitido, processa todos os anos disponíveis.",
+    )
+    ap.add_argument(
+        "--month",
+        type=int,
+        default=None,
+        help="Mês específico (1-12). Se omitido, processa todos os meses disponíveis.",
     )
     args = ap.parse_args()
 
@@ -31,7 +55,11 @@ def main() -> None:
     try:
         bank_lnd_to_raw(
             spark,
-            landing_prefix_suffix=args.landing_prefix,
+            client_slug=args.client,
+            bank_code=args.bank,
+            doc_type=args.doc_type,
+            year=args.year,
+            month=args.month,
         )
     finally:
         spark.stop()

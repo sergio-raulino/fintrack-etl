@@ -27,10 +27,45 @@ with DAG(
             export JAVA_HOME=/opt/java/openjdk
 
             /opt/spark/bin/spark-submit \
+            --master spark://spark:7077 \
+            --deploy-mode client \
+            --py-files /opt/spark-jobs/fintrack_etl.zip \
+            /opt/spark-jobs/jobs/sdl_lnd_fin/bank_ori_lnd_finantial_files_extract.py \
+            --client cruz_raulino_familia \
+            --local-dir ./data/raw/drive \
+            --year 2025 \
+            --month 10
+
+
+            /opt/spark/bin/spark-submit \
               --master spark://spark:7077 \
               --deploy-mode client \
               --py-files /opt/spark-jobs/fintrack_etl.zip \
-              /opt/spark-jobs/jobs/sdl_lnd_fin/bank_ori_lnd_finantial_files_extract.py
+              /opt/spark-jobs/jobs/sdl_lnd_fin/bank_ori_lnd_finantial_files_extract.py \
+                --client cruz_raulino_familia \
+                --local-dir ./data/raw/drive \
+                --year 2025 \
+                --month 11
+
+            /opt/spark/bin/spark-submit \
+              --master spark://spark:7077 \
+              --deploy-mode client \
+              --py-files /opt/spark-jobs/fintrack_etl.zip \
+              /opt/spark-jobs/jobs/sdl_lnd_fin/bank_ori_lnd_finantial_files_extract.py \
+                --client cruz_raulino_familia \
+                --local-dir ./data/raw/drive \
+                --year 2025 \
+                --month 12
+
+            /opt/spark/bin/spark-submit \
+              --master spark://spark:7077 \
+              --deploy-mode client \
+              --py-files /opt/spark-jobs/fintrack_etl.zip \
+              /opt/spark-jobs/jobs/sdl_lnd_fin/bank_ori_lnd_finantial_files_extract.py \
+                --client cruz_raulino_familia \
+                --local-dir ./data/raw/drive \
+                --year 2026 \
+                --month 1
 
             echo "✅ Extração finalizada com sucesso"
         """,

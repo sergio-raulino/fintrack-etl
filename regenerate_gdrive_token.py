@@ -10,8 +10,8 @@ SECRETS_DIR = ROOT_DIR / "spark" / "secrets"
 CREDS_PATH = SECRETS_DIR / "credentials.json"
 TOKEN_PATH = SECRETS_DIR / "token.json"
 
-SCOPES = ["https://www.googleapis.com/auth/drive.readonly"]
-
+# SCOPES = ["https://www.googleapis.com/auth/drive.readonly"]
+SCOPES = ["https://www.googleapis.com/auth/drive"]
 
 def main() -> None:
     if not CREDS_PATH.exists():
