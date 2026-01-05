@@ -34,22 +34,22 @@ with DAG(
                 --client cruz_raulino_familia
 
             echo "✅ Carga lnd->raw finalizada com sucesso"
-            
-            set -e
-            echo "🚀 Iniciando a extração dos dados financeiros da landing para raw, via Spark"
 
-            cd /opt/spark-jobs
-            export JAVA_HOME=/opt/java/openjdk
-            /opt/spark/bin/spark-submit \
-              --master spark://spark:7077 \
-              --deploy-mode client \
-              --py-files /opt/spark-jobs/fintrack_etl.zip \
-              /opt/spark-jobs/jobs/sdl_raw_fin/bank_lnd_raw_finantial_files_load.py \
-                --client cruz_raulino_familia \
-                --bank bb \
-                --doc-type faturas \
-                --year 2025 \
-                --month 11
+            # set -e
+            # echo "🚀 Iniciando a extração dos dados financeiros da landing para raw, via Spark"
+
+            # cd /opt/spark-jobs
+            # export JAVA_HOME=/opt/java/openjdk
+            # /opt/spark/bin/spark-submit \
+            #   --master spark://spark:7077 \
+            #   --deploy-mode client \
+            #   --py-files /opt/spark-jobs/fintrack_etl.zip \
+            #   /opt/spark-jobs/jobs/sdl_raw_fin/bank_lnd_raw_finantial_files_load.py \
+            #     --client cruz_raulino_familia \
+            #     --bank bb \
+            #     --doc-type extratos \
+            #     --year 2025 \
+            #     --month 11
 
             echo "✅ Carga lnd->raw finalizada com sucesso"
         """,

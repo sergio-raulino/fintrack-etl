@@ -123,7 +123,7 @@ def main() -> None:
     # ------------------------------------------------------------------
     # 2) Define caminho local do CSV
     # ------------------------------------------------------------------
-    # Ex.: ./data/raw/drive/02_forms/cruz_raulino_familia/forms_gastos_compartilhados_20260103.csv
+    # Ex.: ./data/raw/drive/cruz_raulino_familia/02_forms/gastos_compartilhados_20260103.csv
     relative_path = (
         Path("02_forms")
         / args.client
@@ -159,9 +159,9 @@ def main() -> None:
     # ------------------------------------------------------------------
 
     # Ex.:
-    # fintrack/01_clientes/cruz_raulino_familia/02_forms/forms_gastos_compartilhados/ano=2026/mes=01/forms_gastos_compartilhados_20260103.csv
+    # fintrack/01_clientes/cruz_raulino_familia/02_forms/gastos_compartilhados/ano=2026/mes=01/gastos_compartilhados_20260103.csv
     object_name = (
-        f"fintrack/01_clientes/{args.client}/02_forms/forms_gastos_compartilhados/{csv_name}"
+        f"fintrack/01_clientes/{args.client}/02_forms/gastos_compartilhados/{csv_name}"
     )
 
     logger.info(

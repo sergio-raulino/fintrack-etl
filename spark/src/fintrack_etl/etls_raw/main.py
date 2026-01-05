@@ -28,7 +28,7 @@ logger = logging.getLogger(__name__)
 # Constantes / Metadados da RAW (Iceberg)
 # =========================================================
 
-# Catálogo Iceberg RAW (ex.: sdl_raw_adm) e schema para as tabelas do FinTrack
+# Catálogo Iceberg RAW (ex.: sdl_raw_fin) e schema para as tabelas do FinTrack
 ICEBERG_CATALOG = settings.hive_fin.sdl_raw_catalog or "sdl_raw_fin"
 ICEBERG_SCHEMA = "fintrack_bank"   # você pode trocar depois se quiser
 

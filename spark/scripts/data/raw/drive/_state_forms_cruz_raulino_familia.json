@@ -1,7 +1,7 @@
 {
-  "last_upload_date": "2026-01-03",
-  "last_s3a_uri": "s3a://sdl-lnd-fin/fintrack/01_clientes/cruz_raulino_familia/02_forms/forms_gastos_compartilhados/forms_gastos_compartilhados_20260103.csv",
+  "last_upload_date": "2026-01-04",
+  "last_s3a_uri": "s3a://sdl-lnd-fin/fintrack/01_clientes/cruz_raulino_familia/02_forms/gastos_compartilhados/forms_gastos_compartilhados_20260104.csv",
   "sheet_id": "1peOslmfkRzGB7ITqcNYKiHeLLZ9iP3W_Ni-Kfwcu_84",
   "client": "cruz_raulino_familia",
-  "last_success_upload": "2026-01-03T15:27:52"
+  "last_success_upload": "2026-01-04T23:53:19"
 }
